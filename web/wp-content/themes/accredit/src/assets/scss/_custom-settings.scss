@@ -1,0 +1,41 @@
+// custom settings for Accreditaion
+$body-font-size: $global-font-size;
+
+$accredit-font:'Montserrat','Source Sans Pro', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$body-font-family: $accredit-font;
+
+$accredit-header-font: 'Montserrat','Source Sans Pro', 'Roboto', sans-serif;
+$header-font-family: $accredit-header-font;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$h2-weight: $font-weight-semibold;
+$h3-weight: $font-weight-medium;
+$h4-weight: $font-weight-regular;
+$h5-weight: $font-weight-semibold;
+$h6-weight: $font-weight-bold;
+
+$accredit-accordion-title-font: 'Robot', sans-serif;
+
+$card-margin-bottom-increase: $global-margin;
+
+@function calc-width($value1, $value2) {
+  @return $value1+$value2;
+}
+
+@mixin aspect-ratio($width, $height) {
+  padding-bottom: ($height / $width) * 100%;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+$card-margin-bottom-increase: $global-margin;
+
+$font-awesome: 'fontawesome';

@@ -1,0 +1,23 @@
+# Files
+~*
+Thumbs.db
+.DS_Store
+*.log
+*.sql
+*.sqlite
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Directories
+node_modules
+
+# Wordpress specific
+web/wp-config.php
+web/wp-content/uploads
+web/wp-content/upgrade

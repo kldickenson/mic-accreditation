@@ -1,0 +1,64 @@
+.main-container {
+
+  ul.accordion {
+    padding-left: 0;
+
+    li {
+      margin-bottom: $global-margin;
+    }
+  }
+
+  /* to cancell out the default border radius by Foundations */
+  .accordion-item:first-child > :first-child,
+  .accordion-item:last-child:not(.is-active) > .accordion-title
+   {
+    border-radius: 0;
+  }
+
+  .accordion-title {
+    /* to add Font Awesome to the accordion */
+    @include fa-icon;
+    @extent .fas;
+    display: block;
+    padding-left: 1rem;
+    background-color: $light-blue;
+    border-radius: 0;
+    border-bottom: 0;
+    font-family: $accredit-accordion-title-font;
+    font-weight: 700;
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+
+
+    &::before {
+      display: none;
+    }
+
+    &:after {
+      position:absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      // font-size: 2em;
+      font-family: $font-awesome;
+      content: fa-content($fa-var-plus-circle);
+    }
+    &:hover, &:focus {
+      background-color: $lighter-gray;
+      border-bottom: none !important;
+    }
+
+  }
+
+  li.is-active .accordion-title {
+    text-decoration: none;
+    background-color: #d5e1f1;
+      &:after {
+        content: fa-content($fa-var-minus-circle);
+      }
+  }
+}
+
+

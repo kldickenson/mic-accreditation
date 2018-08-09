@@ -1,0 +1,114 @@
+/*		Custom Foundation 6 CSS		*/
+
+.orbit-bullets button {
+	padding: 0.5rem;
+	max-width: 0.3rem;
+	max-height: 0.3rem;  }
+
+.owl-next,
+.owl-prev {
+	width: 1.7rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	background: #1a1a1a;
+	opacity: 0.3;
+	color: white;
+	position: absolute;
+	top: 50%; }
+
+.owl-next{
+	float: right;
+	right: 0; }
+
+.owl-prev {
+	float: left; }
+
+.owl-next:hover,
+.owl-prev:hover {
+	opacity: 1; }
+
+.orbit-previous,
+.orbit-next {
+	font-size: 0.7rem;
+	padding: 0.5rem;
+	opacity: 0.3; }
+
+.orbit-previous:hover,
+.orbit-next:hover {
+	opacity: 1;
+	background-color: #1a1a1a; }
+
+.close-button {
+	padding: 0.2em;
+	font-size: 1em;
+	background: transparent;
+	right: .2rem;
+	top: .1rem; }
+
+.close-button:hover {
+	background: transparent; }
+
+.tooltip::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset 0.75rem;
+  border-color: transparent transparent #0a0a0a;
+  border-bottom-style: solid;
+  border-top-width: 0;
+  bottom: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.tooltip.left::before {
+    border-color: transparent transparent transparent #0a0a0a; }
+
+.reveal.full {
+	z-index: 999999; }
+
+.orbit-slide {
+	max-height:none !important; }
+
+.orbit-container {
+	height:100% !important; }
+
+.orbit-container img {
+	width:100% !important; }
+
+.fp-post-item article {
+	margin: 2em 0em; }
+	.fp-post-item article .blog-post-tags ul {
+		max-width: 100%; }
+
+.blog-post-tags ul,
+.post-categories ul {
+	list-style: none;
+	display: inline-block; }
+	.blog-post-tags li,
+	.post-categories li {
+		display: inline;
+		margin-right: .5em; }
+
+.blog-post-comments {
+	float: left; }	
+.blog-post-author {
+	float: left; }	
+.blog-post-excerpt {
+	display: block;
+	margin: .5em 0em;
+	clear:both; }		
+	.blog-post-date,
+	.blog-post-author,
+	.blog-post-comments,
+	.blog-post-content .entry-title {
+		margin: .3em .3em .3em 0em; }
+
+.fp-post-carousel-item {
+	margin: .5em; }

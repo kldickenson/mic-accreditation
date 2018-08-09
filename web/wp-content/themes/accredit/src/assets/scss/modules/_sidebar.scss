@@ -1,0 +1,28 @@
+.sidebar {
+  li {
+    list-style: none;
+    border-bottom: 1px solid $light-gray;
+    width: 100%;
+
+    a {
+      display: block;
+      color: $black;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: .5rem .1rem;
+      position: relative;
+      transition: color .2s ease;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        background: $lightest-gray;
+        // background: #f3f3f0;
+      }
+    }
+    &.is-active {
+      a {
+        background: $lightest-gray;
+      }
+    }
+  }
+}

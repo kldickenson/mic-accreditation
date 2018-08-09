@@ -1,0 +1,79 @@
+.cards-container {
+
+  @include xy-grid;
+
+  .card {
+    @include breakpoint(small) {
+      @include xy-cell(12);
+
+      .card-divider {
+        font-family: $header-font-family;
+        font-weight: 700;
+        color: $white;
+      }
+
+      .card-content {
+        padding: 1rem;
+      }
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(1 of 3, true, 0.7rem);
+    }
+  }
+}
+
+a {
+  .card {
+    margin-bottom: calc-width($card-margin-bottom-increase, $card-margin-bottom-increase);
+    transition: all 200ms ease-in;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0);
+
+    .card-divider {
+      background-color: $michigan-blue;
+      font-family: $header-font-family;
+      font-weight: 700;
+      color: $white;
+      padding: .5rem 1rem .5rem 1rem;
+      width: 100%;
+      @include breakpoint(small only) {
+        padding: .5rem .5rem 0 .5rem;
+      }
+
+      h5 {
+        letter-spacing: -0.03125rem;
+        line-height: 1;
+        margin-bottom: 0;
+        transition: all .2s ease-in;
+        @include breakpoint( 1024px) {
+          font-size: 1rem;
+        }
+        @include breakpoint(medium only) {
+          font-size: 1rem;
+        }
+      }
+
+      .column.small-2 {
+        position: relative;
+        @include aspect-ratio(500, 100);
+      }
+    }
+    p {
+      @include breakpoint(medium only) {
+        // font-size: .8rem;
+      }
+    }
+  }
+
+  &:hover {
+    .card {
+      transform: translateY(-1px);
+      border-color: darken($light-gray, 5%);
+      box-shadow: 0 7px 14px rgba(0, 0, 0, 0.11), 0 5px 5px rgba(0, 0, 0, 0.09);
+      
+      h5 {
+        color: $michigan-maize;
+      }
+    }
+  }
+}

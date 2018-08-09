@@ -1,0 +1,90 @@
+footer {
+  background: rgba($michigan-blue, .7);
+  color: $white;
+  font-size: .7rem;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
+  a {
+    color: $white;
+    &:hover, &:focus {
+      color: $link-hover;
+    }
+  }
+}
+
+.footer-container {
+  @include xy-grid-container;
+  margin-top: rem-calc(60);
+}
+
+.footer-grid {
+  @include xy-grid;
+  @include xy-grid-collapse;
+   padding: rem-calc(30) 0;
+
+  a {
+    text-decoration: underline;
+  }
+
+  h6 {
+    text-transform: uppercase;
+  }
+
+  ul {
+    font-family: $header-font-family;
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: .875rem;
+      font-weight: 400;
+      width: 100%;
+
+      a {
+        color: $white;
+        padding: .5rem 0;
+        transition: color .2s ease;
+        &:hover {
+          color: $michigan-maize;
+        }
+      }
+      &.is-active a {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.site-footer-logo {
+  @include xy-cell-base(shrink);
+  padding-right: .75rem;
+
+  img {
+   width: 100px;
+  }
+}
+
+.widget {
+  @include xy-cell-base(auto);
+  line-height: 1.1em;
+}
+.copyright-bar {
+  @include xy-cell-base(shrink);
+  margin-top:6rem;
+  font-size: .65rem;
+  text-align: right;
+  @include flex-align-self(bottom);
+
+  @include breakpoint(small only) {
+    margin-top: 1rem;
+    @include xy-cell-base(full);
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

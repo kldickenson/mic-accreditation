@@ -1,0 +1,46 @@
+.top-bar {
+
+  .search {
+    margin-top: 2rem;
+  }
+  .input-group {
+    margin-bottom: 0;
+    // min-width: 14.5rem;
+
+    >:first-child {
+      border-radius: 0;
+    }
+
+    > :last-child > * {
+      border-radius: 0;
+    }
+  }
+
+
+  .input-group-field {
+    padding: .35rem .75rem;
+  }
+
+  .input-group-button {
+    background: $white;
+  }
+
+  input {
+    border: 0;
+    font-size: .75rem;
+    &:focus {
+      // border: 0;
+    }
+    @include breakpoint(small only) {
+      min-width: 80%;
+      height: 2.5rem;
+      font-size: 1rem;
+    }
+
+    &.button {
+      background-color: $white;
+      border: none;
+      color: $black;
+    }
+  }
+}

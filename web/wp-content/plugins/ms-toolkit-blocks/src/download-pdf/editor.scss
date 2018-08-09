@@ -1,0 +1,24 @@
+/**
+ * #.# Editor Styles for Button Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ .accredit-block-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    padding: 1rem;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffcb05;
+    color: #171717;
+ }

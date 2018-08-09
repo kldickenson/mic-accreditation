@@ -1,0 +1,270 @@
+// Page header
+.front-hero {
+  position: relative;
+  height: 100%;
+
+   @include breakpoint(small) {
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    min-height: 120px;
+  }
+
+  @include breakpoint(medium) {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem-calc(450);
+    // margin: 0 0 rem-calc(48);
+  }
+  @include breakpoint(large) {
+    height: rem-calc(650);
+  }
+
+  .tagline {
+    position: absolute;
+    bottom: 0;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: center;
+    color: $michigan-maize;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: $font-weight-medium;
+    line-height: 1.1em;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+
+    @include breakpoint(small only) {
+      font-size: 1.2rem;
+      // position: relative;
+      padding: 1rem;
+    }
+    @include breakpoint(medium only) {
+      font-size: 2rem;
+      @include xy-cell(12);
+      margin: 0;
+    }
+    .ccfic {
+      max-width: map-get($breakpoints, large);
+      margin: 0 auto;
+    }
+  }
+
+  h4 {
+    color: $white;
+    font-size: 1.3125rem;
+  }
+}
+
+// Intro
+.intro {
+  width: 100%;
+  margin: 0;
+  h3 {
+    color: lighten($michigan-blue, 15%);
+    text-transform: uppercase;
+    font-weight: $font-weight-regular;
+    letter-spacing: .5px;
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+
+  }
+  // @include xy-grid-container;
+  // @include xy-grid;
+  // @media only screen
+  //   and (device-width : 375px)
+  //   and (device-height : 812px)
+  //   and (-webkit-device-pixel-ratio : 3) {
+  //     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  // }
+
+  // @media only screen
+  //   and (device-width : 375px)
+  //   and (device-height : 812px)
+  //   and (-webkit-device-pixel-ratio : 3)
+  //   and (orientation : portrait)  {
+  //     padding: 2rem .625rem 2rem .625rem;
+  // }
+
+  // @include breakpoint (small) {
+  //   padding-top: 2rem;
+  // }
+  //  padding: 2rem .625rem 2rem .625rem;
+}
+
+.announcements {
+  margin: 0;
+  padding: 2rem 0;
+  background-color: $light-gray;
+
+  @media only screen
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-device-pixel-ratio : 3) {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait)  {
+      padding: 2rem .625rem 2rem .625rem;
+  }
+
+  .rpwe-container {
+
+  }
+  .rpwe-block {
+
+  }
+
+  .rpwe-ul {
+    margin-left: 0;
+  }
+
+  .rpwe-li {
+    box-sizing: border-box;
+    list-style: none;
+
+    @include breakpoint(small) {
+      width: 100%;
+      margin-bottom: .5rem;
+    }
+    @include breakpoint(medium) {
+      width: 48%;
+     float:left;
+    }
+
+    &:first-child {
+      @include breakpoint(medium) {
+        margin-right: 2%;
+        padding-right: 2%;
+        border-right: 1px solid lighten($michigan-blue, 15%);
+      }
+    }
+    .more-link {
+      &:after {
+        font-size: 1.1rem;
+        font-family: $font-awesome;
+        color: lighten($michigan-blue, 15%);
+        content: " \f0a9";
+      }
+    }
+  }
+
+  h3.rpwe-title {
+    display: inline-block;
+    padding-right: .5rem;
+    font-size: 1rem;
+    letter-spacing: 0;
+    margin-bottom:0;
+    a {
+      text-decoration: underline;
+      text-transform: none;
+      font-weight:$font-weight-semibold;
+      color: $michigan-blue;
+      font-size: .95em;
+    }
+  }
+
+  .rpwe-img,
+  .rpwe-time {
+    display: none;
+  }
+
+  .rpwe-summary {
+    display: inline;
+    line-height: 1.5rem;
+  }
+
+  .hlc-logo {
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+     img {
+      @include breakpoint(small only) {
+        width: auto;
+        margin-top: $global-margin;
+      }
+      @include breakpoint(medium) {
+        width: 200px;
+        float: right;
+      }
+
+    }
+  }
+}
+.provost-message {
+  padding: 2rem 0 0;
+
+  @media only screen
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-device-pixel-ratio : 3) {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait)  {
+      padding: 2rem .625rem 2rem .625rem;
+  }
+
+  .provost-photo {
+    @include breakpoint(small only) {
+      margin-bottom: $global-margin;
+      text-align: center;
+    }
+    @include breakpoint(medium) {
+      @include xy-cell(3);
+      text-align: left;
+    }
+    img {
+      @include breakpoint(small) {
+        width: 50%;
+      }
+      @include breakpoint(medium) {
+        width: 90%;
+      }
+
+    }
+  }
+  .provost-text {
+    @include breakpoint(small only) {
+      padding: 0 1rem;
+    }
+  }
+
+  img {
+    @include breakpoint(small) {
+      width: 75%;
+    }
+    @include breakpoint(medium) {
+      margin-top: .5rem;
+    }
+  }
+  p.caption {
+    font-size: 90%;
+    font-weight:$font-weight-bold;
+    margin-top: -.5rem;
+  }
+}
+
+// Section divider
+.section-divider {
+  @include xy-grid-container;
+  @include xy-grid;
+
+  hr {
+    @include xy-cell(12);
+    @extend .dotted;
+    box-sizing: border-box;
+  }
+}

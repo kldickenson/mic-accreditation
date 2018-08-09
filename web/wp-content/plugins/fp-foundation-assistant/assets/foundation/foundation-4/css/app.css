@@ -1,0 +1,130 @@
+
+/*		Custom Foundation 5 CSS		*/
+
+.f-dropdown li {
+	width: 100%; }
+
+.f-dropdown li a,
+.tabs .tab-title > a {
+	color: #838383; }
+
+.tabs dd.active > a, 
+.tabs .tab-title.active > a {
+    color: #515151; }
+
+.fp-tab-content {
+	text-indent: 1em; }
+
+.accordion .accordion-navigation > a, 
+.accordion dd > a, 
+.accordion .accordion-navigation.active > a, 
+.accordion dd.active > a {
+	color: #838383; }
+
+.accordion .accordion-navigation.active > a, 
+.accordion dd.active > a {
+	color: #515151; }
+
+.orbit-container .orbit-timer.paused > span {
+	display: none; }
+
+.orbit-container .orbit-slide-number {
+   display: none; }
+
+.orbit-container .orbit-next:hover,
+.orbit-container .orbit-prev:hover {
+    background-color: transparent; }
+
+.orbit-container .orbit-next:hover > span  {
+    border-left-color: #3d3d3d; }
+
+.orbit-container .orbit-next > span {
+    border-left-color: #d3d3d3; }
+
+.orbit-container .orbit-prev:hover > span  {
+    border-right-color: #3d3d3d; }
+
+.orbit-container .orbit-prev > span {
+    border-right-color: #d3d3d3; }
+
+.orbit-container .orbit-prev, 
+.orbit-container .orbit-next {
+	color: transparent !important; }
+
+@media screen and (max-width: 40em) {
+	.orbit-next, 
+	.orbit-prev {
+		display: inline; } }
+
+.owl-next,
+.owl-prev {
+	width: 1.7rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	background: #1a1a1a;
+	opacity: 0.3;
+	color: white;
+	position: absolute;
+	top: 50%; }
+
+.owl-next{
+	float: right;
+	right: 0; }
+
+.owl-prev {
+	float: left; }
+
+.owl-next:hover,
+.owl-prev:hover {
+	opacity: 1; }
+
+.tooltip {
+	margin-top: -45px !important; }
+
+.tabs .title a,
+.vertical-tabs .title a {
+	box-shadow: none !important; }
+
+.orbit-slide {
+	background:#f5f5f5;
+	max-height:none !important; }
+
+.orbit-container {
+	height:100% !important; }
+
+.orbit-container img {
+	width:100% !important; }
+
+.fp-post-item article {
+	margin: 2em 0em; }
+	.fp-post-item article .blog-post-tags ul {
+		max-width: 100%; }
+
+.blog-post-tags ul,
+.post-categories ul {
+	list-style: none;
+	display: inline-block; }
+	.blog-post-tags li,
+	.post-categories li {
+		display: inline;
+		margin-right: .5em; }
+
+.blog-post-comments {
+	float: left; }	
+.blog-post-author {
+	float: left; }	
+.blog-post-excerpt {
+	display: block;
+	margin: .5em 0em;
+	clear:both; }		
+	.blog-post-date,
+	.blog-post-author,
+	.blog-post-comments,
+	.blog-post-content .entry-title {
+		margin: .3em .3em .3em 0em; }
+
+.fp-post-carousel-item {
+	margin: .5em; }

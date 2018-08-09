@@ -1,0 +1,16 @@
+1.2.1 (2018-05-16)
+==================
+code cleanup
+
+1.2 (2018-03-06)
+================
+Add support for simple username add.
+
+1.1 (2018-02-20)
+================
+Big fixes
+redirect logout to homepage
+
+1.0 (2017-11-27)
+================
+initial release

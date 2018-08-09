@@ -1,0 +1,4 @@
+name: accreditation
+recipe: wordpress
+config:
+  webroot: web

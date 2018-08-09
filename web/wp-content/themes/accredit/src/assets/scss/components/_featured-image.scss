@@ -1,0 +1,62 @@
+.featured-hero {
+  position: relative;
+  background-color: $michigan-blue;
+  // background-image: url('../images/MedPhysRehabLab17.jpg');
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  height: rem-calc(350);
+  transition: all .2s ease;
+
+  @include breakpoint(xlarge down) {
+    height: rem-calc(350);
+  }
+
+  @include breakpoint(medium down) {
+    height: rem-calc(350);
+  }
+
+  @include breakpoint(small only) {
+    height: 27.75vh;
+  }
+
+  .icon {
+    margin-bottom: 2rem;
+    @include breakpoint(small only) {
+      margin-bottom: 0;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+      @include breakpoint(small only) {
+        margin: 0 auto;
+        width: 70px;
+      }
+    }
+  }
+  .entry-title-wrap {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    background: $michigan-maize;
+    @include breakpoint(small only) {
+      padding-top: 1.5rem;
+    }
+
+    h1 {
+      background: transparent;
+      color: $michigan-blue;
+      font-size: 2em;
+      margin-bottom: 0;
+      margin-left: 0;
+      text-transform: uppercase;
+      @include breakpoint(small only) {
+        margin-bottom: 1rem;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+// Navigation breakpoints
+.mobile-menu,
+.site-title-bar {
+  @include hide-for(medium);
+}
+
+.desktop-menu,
+.site-navigation .top-bar-left {
+  @include show-for(medium);
+}
+
+// Site title
+.site-desktop-title a {
+  font-weight: bold;
+}
+
+// Mobile menu
+
+// hamburger
+.site-title-bar .menu-icon {
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/menu.svg) left center no-repeat;
+}
+
+.mobile-menu {
+  display: none; // prevents repaint caused by JS hiding menu onload
+}
+
+.off-canvas {
+  > ul.menu {
+    height: 100vh;
+    padding: 1rem;
+
+    a {
+      color: $white;
+      font-weight: 600;
+      font-size: rem-calc(15);
+      &:hover {
+        background-color: lighten($michigan-maize, 20%);
+        color: $michigan-blue;
+      }
+    }
+  }
+
+  .menu .active > a { background-color: #ccc; }
+
+}
+
+.site-mobile-title {
+  font-size: 1.2rem;
+  color: $white;
+  a {
+    color: $michigan-maize;
+    font-size: 2rem;
+    &:hover , &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.mobile-menu,
+.mobile-off-canvas-menu {
+
+  .menu .is-active > a {
+    background-color: rgba($white, .15);
+    color: $michigan-maize;
+  }
+}
+
+// Tablet and desktop menu
+
+// to override wp-admin top bar setting that seeped down to site-header
+body .site-header .top-bar {
+  @include breakpoint(small only) {
+    margin-top: 0;
+  }
+}
+.site-header {
+
+  .top-bar {
+    background: transparent;
+    display: block;
+
+    @media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    .main-nav {
+      margin-top: 2rem;
+      border-top: 1px solid rgba($light-gray,.2);
+    }
+
+    .menu-top-nav {
+      margin-top: -6px;
+      font-size: 2rem;
+
+      // trying to hide the HOME icon
+      li:first-child {
+        display: none;
+      }
+    }
+
+    .menu a {
+      color:  $light-gray;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      line-height: 1;
+
+      &:hover:not(.button) {
+        color: $link-hover;
+      }
+    }
+
+    .menu .is-active {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        top: -12px; left: 45%;
+        content: url(/wp-content/themes/accredit/dist/assets/images/icon-active-menu.png);
+      }
+      &> a {
+      color: $white;
+      }
+    }
+    .menu .active > a { background-color: #ccc; }
+
+    .menu>li:not(.menu-text)>a { padding: 1rem; }
+    .menu li:not(:last-child) { border-right: none; }
+
+    .dropdown.menu .submenu { border: 0; }
+    .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
+    .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
+    .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
+  }
+}
+
+
+.site-navigation {
+  @include breakpoint(small only) {
+    padding: 0; // prevents container visibility on small screens
+  }
+}
+
+// WP post navigation
+.post-navigation {
+  @include clearfix;
+}
+
+.nav-previous {
+  float:left;
+}
+
+.nav-next {
+  float:right;
+}

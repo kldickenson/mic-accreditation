@@ -1,0 +1,42 @@
+table {
+    border-radius: 0;
+    margin-bottom: 3rem;
+    thead {
+      background: $light-blue;
+      color: $black;
+      th {
+        text-align: center;
+      }
+    }
+    tbody {
+      th {
+        border-right: 1px solid $light-gray;
+      }
+      th, td {
+        text-align: center;
+        font-weight: 400;
+      }
+        td {
+            border-bottom: 1px solid $light-gray;
+            border-right: 1px solid $light-gray;
+        }
+    }
+}
+
+.wp-block-ms-toolkit-blocks-accordion {
+    .wp-block-table,
+    table,
+    .unstriped {
+        @extend .scroll;
+        margin: 2rem 0 0 0;
+        tbody {
+            background-color: transparent;
+            & tr:nth-child(even) {
+                background-color: transparent;
+            }
+            tr {
+                background-color: transparent;
+            }
+        }
+    }
+}

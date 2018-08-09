@@ -1,0 +1,2622 @@
+# FP Foundation Assistant
+# Copyright (C) 2016 Fort Pandemonium
+# This file is distributed under the same license as the PACKAGE package.
+# Fort Pandemonium <info@fortpandemonium.com>, 2016.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FP Foundation Assistant 1.1.0\n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <support@fortpandemonium.com>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2016-11-20 04:15+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: includes/class-fp-foundation-assistant-admin-api.php:160
+msgid "Upload an image"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-admin-api.php:160
+msgid "Use image"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-admin-api.php:160
+msgid "Upload new image"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-admin-api.php:161
+msgid "Remove image"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:59
+msgid "FP Foundation Assistant"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:84
+msgid "Settings"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:101
+msgid "Load Foundation"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:102
+msgid ""
+"Uncheck the box if you don't want Foundation to load. This option is "
+"provided, in case you are already using Foundation-based theme, and you only "
+"want to use the shortcodes."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:108
+msgid "Foundation Version"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:109
+msgid ""
+"Choose the Foundation version you want to use. If you chose not to load "
+"Foundation, choose the version you are currently using."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 6"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 6 - Flex Grid"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 6 - RTL"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 6 - Flex Grid RTL"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 5"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 4"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:111
+msgid "Foundation 3"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:116
+msgid "Load Foundation Icon Fonts 3"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:117
+msgid "Uncheck the box if you don't want Foundation Icon Fonts to load."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:123
+msgid "Load Owl Carousel"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:124
+msgid ""
+"Uncheck the box if you don't want OwlCarousel to load. In this case, you "
+"can't use the [fp-carousel] shortcode."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:130
+msgid "POST SETTINGS"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:137
+msgid "Posts"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:138
+msgid ""
+"Choose on which posts to load the plugin. If you specify a period, the "
+"plugin will work only for the posts posted during this time. This is helpful "
+"if you want to switch to a different theme but still want to use the "
+"Foundation functionality on previous posts."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:140
+msgid "All Posts"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:140
+#: includes/class-fp-foundation-assistant-settings.php:171
+msgid ""
+"Specified Period <i class=\"fp-plugin-note\">( Please, choose the dates "
+"below )</i>"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:140
+msgid "No Posts"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:145
+msgid "Posts Start Date"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:146
+msgid "Choose a start date for the posts you want Foundation to work for."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:149
+#: includes/class-fp-foundation-assistant-settings.php:180
+msgid "Start date"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:153
+msgid "Posts End Date"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:154
+msgid "Choose an end date for the posts you want Foundation to work for."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:157
+#: includes/class-fp-foundation-assistant-settings.php:188
+msgid "End date"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:161
+msgid "PAGE SETTINGS"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:168
+msgid "Pages"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:169
+msgid ""
+"Choose on which pages to load the plugin. If you specify a period, the "
+"plugin will work only for the pages posted during this time. This is helpful "
+"if you want to switch to a different theme but still want to use the "
+"Foundation functionality on previous pages."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:171
+msgid "All Pages"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:171
+msgid "No Pages"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:176
+msgid "Pages Start Date"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:177
+msgid "Choose a start date for the pages you want Foundation to work for."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:184
+msgid "Pages End Date"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:185
+msgid "Choose an end date for the pages you want Foundation to work for."
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:259
+msgid "FP Foundation Assistant Settings"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:311
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:317
+msgid "If you like our plugin, please, consider supporting us:"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:327
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:336
+msgid "Subscribe to our mailing list"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:337
+msgid "email address"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:340
+msgid "Subscribe"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant-settings.php:368
+#: includes/class-fp-foundation-assistant-settings.php:376
+#: includes/class-fp-foundation-assistant.php:661
+#: includes/class-fp-foundation-assistant.php:669
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/class-fp-foundation-assistant.php:394
+msgid ""
+"Please, enter correct dates for the period you want the plugin to load for."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:101
+#: includes/class-wordpress-shortcodes-foundation-4.php:99
+#: includes/class-wordpress-shortcodes-foundation-5.php:99
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:92
+#: includes/class-wordpress-shortcodes-foundation-6.php:92
+msgid "Place here the shortcode tags for single tab."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:159
+#: includes/class-wordpress-shortcodes-foundation-4.php:127
+#: includes/class-wordpress-shortcodes-foundation-5.php:144
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:144
+#: includes/class-wordpress-shortcodes-foundation-6.php:144
+msgid "Tab Title "
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:161
+#: includes/class-wordpress-shortcodes-foundation-4.php:129
+#: includes/class-wordpress-shortcodes-foundation-5.php:146
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:146
+#: includes/class-wordpress-shortcodes-foundation-6.php:146
+msgid "Tab Content "
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:211
+#: includes/class-wordpress-shortcodes-foundation-4.php:170
+#: includes/class-wordpress-shortcodes-foundation-5.php:198
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:198
+#: includes/class-wordpress-shortcodes-foundation-6.php:198
+msgid "Place here the shortcode tags for single accordion item."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:234
+#: includes/class-wordpress-shortcodes-foundation-4.php:193
+#: includes/class-wordpress-shortcodes-foundation-5.php:221
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:230
+#: includes/class-wordpress-shortcodes-foundation-6.php:230
+msgid "Accordion Title "
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:236
+#: includes/class-wordpress-shortcodes-foundation-4.php:195
+#: includes/class-wordpress-shortcodes-foundation-5.php:223
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:232
+#: includes/class-wordpress-shortcodes-foundation-6.php:232
+msgid "Accordion Content "
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:285
+#: includes/class-wordpress-shortcodes-foundation-4.php:244
+#: includes/class-wordpress-shortcodes-foundation-5.php:271
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:281
+#: includes/class-wordpress-shortcodes-foundation-6.php:281
+msgid "Menu Wrap"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:306
+#: includes/class-wordpress-shortcodes-foundation-3.php:349
+msgid "#"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:308
+#: includes/class-wordpress-shortcodes-foundation-4.php:267
+#: includes/class-wordpress-shortcodes-foundation-5.php:294
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:316
+#: includes/class-wordpress-shortcodes-foundation-6.php:316
+msgid "Menu Title"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:328
+#: includes/class-wordpress-shortcodes-foundation-4.php:289
+#: includes/class-wordpress-shortcodes-foundation-5.php:316
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:337
+#: includes/class-wordpress-shortcodes-foundation-6.php:337
+msgid "Submenu Wrap"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:351
+#: includes/class-wordpress-shortcodes-foundation-4.php:314
+#: includes/class-wordpress-shortcodes-foundation-5.php:341
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:360
+#: includes/class-wordpress-shortcodes-foundation-6.php:360
+msgid "Submenu Title"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:385
+#: includes/class-wordpress-shortcodes-foundation-4.php:348
+#: includes/class-wordpress-shortcodes-foundation-5.php:375
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:391
+#: includes/class-wordpress-shortcodes-foundation-6.php:391
+#: localization/fp-localized-script.php:195
+msgid "Button"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:446
+#: includes/class-wordpress-shortcodes-foundation-4.php:410
+#: includes/class-wordpress-shortcodes-foundation-5.php:436
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:453
+#: includes/class-wordpress-shortcodes-foundation-6.php:453
+#: localization/fp-localized-script.php:181
+msgid "Callout"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:494
+#: includes/class-wordpress-shortcodes-foundation-4.php:462
+#: includes/class-wordpress-shortcodes-foundation-5.php:487
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:510
+#: includes/class-wordpress-shortcodes-foundation-6.php:510
+msgid "Dropdown Content"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:496
+#: includes/class-wordpress-shortcodes-foundation-4.php:464
+#: includes/class-wordpress-shortcodes-foundation-5.php:489
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:512
+#: includes/class-wordpress-shortcodes-foundation-6.php:512
+msgid "Dropdown Title"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:543
+#: includes/class-wordpress-shortcodes-foundation-4.php:507
+#: includes/class-wordpress-shortcodes-foundation-5.php:534
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:553
+#: includes/class-wordpress-shortcodes-foundation-6.php:553
+msgid "Embed Video Link"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:630
+#: includes/class-wordpress-shortcodes-foundation-4.php:594
+#: includes/class-wordpress-shortcodes-foundation-5.php:620
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:639
+#: includes/class-wordpress-shortcodes-foundation-6.php:638
+#: localization/fp-localized-script.php:205
+msgid "Label"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:679
+#: includes/class-wordpress-shortcodes-foundation-4.php:641
+#: includes/class-wordpress-shortcodes-foundation-5.php:667
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:684
+#: includes/class-wordpress-shortcodes-foundation-6.php:683
+msgid "Place here the shortcode tags for the single orbit slide."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:680
+#: includes/class-wordpress-shortcodes-foundation-4.php:642
+#: includes/class-wordpress-shortcodes-foundation-5.php:668
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:685
+#: includes/class-wordpress-shortcodes-foundation-6.php:684
+msgid "orbit-label"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:703
+#: includes/class-wordpress-shortcodes-foundation-3.php:705
+#: includes/class-wordpress-shortcodes-foundation-4.php:665
+#: includes/class-wordpress-shortcodes-foundation-4.php:667
+#: includes/class-wordpress-shortcodes-foundation-5.php:701
+#: includes/class-wordpress-shortcodes-foundation-5.php:703
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:723
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:725
+#: includes/class-wordpress-shortcodes-foundation-6.php:722
+#: includes/class-wordpress-shortcodes-foundation-6.php:724
+msgid "Slide "
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:705
+#: includes/class-wordpress-shortcodes-foundation-4.php:667
+#: includes/class-wordpress-shortcodes-foundation-5.php:703
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:725
+#: includes/class-wordpress-shortcodes-foundation-6.php:724
+msgid " Content"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:792
+#: includes/class-wordpress-shortcodes-foundation-3.php:800
+#: includes/class-wordpress-shortcodes-foundation-4.php:753
+#: includes/class-wordpress-shortcodes-foundation-4.php:761
+#: includes/class-wordpress-shortcodes-foundation-5.php:794
+#: includes/class-wordpress-shortcodes-foundation-5.php:802
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:831
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:840
+#: includes/class-wordpress-shortcodes-foundation-6.php:830
+#: includes/class-wordpress-shortcodes-foundation-6.php:839
+msgid "Click here for a modal"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:805
+#: includes/class-wordpress-shortcodes-foundation-4.php:766
+#: includes/class-wordpress-shortcodes-foundation-5.php:807
+msgid "Close"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:833
+#: includes/class-wordpress-shortcodes-foundation-3.php:878
+#: includes/class-wordpress-shortcodes-foundation-3.php:963
+#: includes/class-wordpress-shortcodes-foundation-3.php:1094
+#: includes/class-wordpress-shortcodes-foundation-4.php:794
+#: includes/class-wordpress-shortcodes-foundation-4.php:839
+#: includes/class-wordpress-shortcodes-foundation-4.php:932
+#: includes/class-wordpress-shortcodes-foundation-4.php:1048
+#: includes/class-wordpress-shortcodes-foundation-5.php:835
+#: includes/class-wordpress-shortcodes-foundation-5.php:880
+#: includes/class-wordpress-shortcodes-foundation-5.php:974
+#: includes/class-wordpress-shortcodes-foundation-5.php:1110
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:873
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:922
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:1016
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:1159
+#: includes/class-wordpress-shortcodes-foundation-6.php:872
+#: includes/class-wordpress-shortcodes-foundation-6.php:921
+#: includes/class-wordpress-shortcodes-foundation-6.php:1015
+#: includes/class-wordpress-shortcodes-foundation-6.php:1141
+#: localization/fp-localized-script.php:70
+msgid "Place Content Here"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:834
+#: includes/class-wordpress-shortcodes-foundation-3.php:846
+#: includes/class-wordpress-shortcodes-foundation-4.php:795
+#: includes/class-wordpress-shortcodes-foundation-4.php:807
+#: includes/class-wordpress-shortcodes-foundation-5.php:836
+#: includes/class-wordpress-shortcodes-foundation-5.php:848
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:874
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:885
+#: includes/class-wordpress-shortcodes-foundation-6.php:873
+#: includes/class-wordpress-shortcodes-foundation-6.php:884
+msgid "Place the description text here."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:999
+#: includes/class-wordpress-shortcodes-foundation-4.php:968
+#: includes/class-wordpress-shortcodes-foundation-5.php:1010
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:1057
+#: includes/class-wordpress-shortcodes-foundation-6.php:1057
+msgid "Place here the shortcode tags for the column content."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-3.php:1634
+#: includes/class-wordpress-shortcodes-foundation-3.php:1680
+#: includes/class-wordpress-shortcodes-foundation-4.php:1544
+#: includes/class-wordpress-shortcodes-foundation-4.php:1590
+#: includes/class-wordpress-shortcodes-foundation-5.php:1623
+#: includes/class-wordpress-shortcodes-foundation-5.php:1669
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:1644
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:1690
+#: includes/class-wordpress-shortcodes-foundation-6.php:1645
+#: includes/class-wordpress-shortcodes-foundation-6.php:1691
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-4.php:265
+#: includes/class-wordpress-shortcodes-foundation-4.php:312
+#: includes/class-wordpress-shortcodes-foundation-5.php:292
+#: includes/class-wordpress-shortcodes-foundation-5.php:339
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:314
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:358
+#: includes/class-wordpress-shortcodes-foundation-6.php:314
+#: includes/class-wordpress-shortcodes-foundation-6.php:358
+msgid "Place your link here"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-5.php:581
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:599
+#: includes/class-wordpress-shortcodes-foundation-6.php:599
+msgid "Embed Link for Small Screen"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-5.php:582
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:600
+#: includes/class-wordpress-shortcodes-foundation-6.php:600
+msgid "Embed Link for Medium Screen"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-5.php:583
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:601
+#: includes/class-wordpress-shortcodes-foundation-6.php:601
+msgid "Embed Link for Large Screen"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:479
+#: includes/class-wordpress-shortcodes-foundation-6.php:479
+msgid "Dismiss alert"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:697
+#: includes/class-wordpress-shortcodes-foundation-6.php:696
+msgid "Previous Slide"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:698
+#: includes/class-wordpress-shortcodes-foundation-6.php:697
+msgid "Next Slide"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:745
+#: includes/class-wordpress-shortcodes-foundation-6.php:744
+msgid "Current Slide"
+msgstr ""
+
+#: includes/class-wordpress-shortcodes-foundation-6-flex.php:845
+#: includes/class-wordpress-shortcodes-foundation-6.php:844
+msgid "Close modal"
+msgstr ""
+
+#: localization/fp-localized-script.php:19
+msgid "Foundation Assistant Shortcodes"
+msgstr ""
+
+#: localization/fp-localized-script.php:20
+msgid "Foundation Icon Font"
+msgstr ""
+
+#: localization/fp-localized-script.php:21
+msgid "Grid"
+msgstr ""
+
+#: localization/fp-localized-script.php:22
+msgid "Flex Grid"
+msgstr ""
+
+#: localization/fp-localized-script.php:23
+msgid "Tabs & Accordions"
+msgstr ""
+
+#: localization/fp-localized-script.php:24
+msgid "Vertical Tabs"
+msgstr ""
+
+#: localization/fp-localized-script.php:25
+msgid "Number of Tabs"
+msgstr ""
+
+#: localization/fp-localized-script.php:26
+msgid "Tabs"
+msgstr ""
+
+#: localization/fp-localized-script.php:27
+msgid "Tab Content"
+msgstr ""
+
+#: localization/fp-localized-script.php:28
+msgid "None"
+msgstr ""
+
+#: localization/fp-localized-script.php:29
+msgid "1"
+msgstr ""
+
+#: localization/fp-localized-script.php:30
+msgid "2"
+msgstr ""
+
+#: localization/fp-localized-script.php:31
+msgid "3"
+msgstr ""
+
+#: localization/fp-localized-script.php:32
+msgid "4"
+msgstr ""
+
+#: localization/fp-localized-script.php:33
+msgid "5"
+msgstr ""
+
+#: localization/fp-localized-script.php:34
+msgid "6"
+msgstr ""
+
+#: localization/fp-localized-script.php:35
+msgid "7"
+msgstr ""
+
+#: localization/fp-localized-script.php:36
+msgid "8"
+msgstr ""
+
+#: localization/fp-localized-script.php:37
+msgid "9"
+msgstr ""
+
+#: localization/fp-localized-script.php:38
+msgid "10"
+msgstr ""
+
+#: localization/fp-localized-script.php:39
+msgid "11"
+msgstr ""
+
+#: localization/fp-localized-script.php:40
+msgid "12"
+msgstr ""
+
+#: localization/fp-localized-script.php:41
+#: localization/fp-localized-script.php:209
+msgid "Small"
+msgstr ""
+
+#: localization/fp-localized-script.php:42
+msgid "Medium"
+msgstr ""
+
+#: localization/fp-localized-script.php:43
+#: localization/fp-localized-script.php:210
+msgid "Large"
+msgstr ""
+
+#: localization/fp-localized-script.php:44
+msgid "XLarge"
+msgstr ""
+
+#: localization/fp-localized-script.php:45
+msgid "Landscape"
+msgstr ""
+
+#: localization/fp-localized-script.php:46
+msgid "Portrait"
+msgstr ""
+
+#: localization/fp-localized-script.php:47
+msgid "Small Columns"
+msgstr ""
+
+#: localization/fp-localized-script.php:48
+msgid "Medium Columns"
+msgstr ""
+
+#: localization/fp-localized-script.php:49
+msgid "Large Columns"
+msgstr ""
+
+#: localization/fp-localized-script.php:50
+msgid "Tab Type"
+msgstr ""
+
+#: localization/fp-localized-script.php:51
+msgid "Vertical"
+msgstr ""
+
+#: localization/fp-localized-script.php:52
+msgid "Horizontal"
+msgstr ""
+
+#: localization/fp-localized-script.php:53
+msgid "Accordion"
+msgstr ""
+
+#: localization/fp-localized-script.php:54
+msgid "Number of Items"
+msgstr ""
+
+#: localization/fp-localized-script.php:55
+msgid "Items"
+msgstr ""
+
+#: localization/fp-localized-script.php:56
+msgid "Slides"
+msgstr ""
+
+#: localization/fp-localized-script.php:57
+msgid "Options"
+msgstr ""
+
+#: localization/fp-localized-script.php:58
+msgid "Basic"
+msgstr ""
+
+#: localization/fp-localized-script.php:59
+msgid "Multi-expand"
+msgstr ""
+
+#: localization/fp-localized-script.php:60
+msgid "All Closed"
+msgstr ""
+
+#: localization/fp-localized-script.php:61
+msgid "Radius"
+msgstr ""
+
+#: localization/fp-localized-script.php:62
+msgid "Round"
+msgstr ""
+
+#: localization/fp-localized-script.php:63
+msgid "Square"
+msgstr ""
+
+#: localization/fp-localized-script.php:64
+msgid "Content"
+msgstr ""
+
+#: localization/fp-localized-script.php:65
+msgid "Title"
+msgstr ""
+
+#: localization/fp-localized-script.php:66
+msgid "Orbit Carousel"
+msgstr ""
+
+#: localization/fp-localized-script.php:67
+msgid "Owl Carousel"
+msgstr ""
+
+#: localization/fp-localized-script.php:68
+msgid "Carousels"
+msgstr ""
+
+#: localization/fp-localized-script.php:69
+msgid "Gutter"
+msgstr ""
+
+#: localization/fp-localized-script.php:71
+msgid "http://Place Link Here"
+msgstr ""
+
+#: localization/fp-localized-script.php:72
+msgid "http://Embed Link Here"
+msgstr ""
+
+#: localization/fp-localized-script.php:73
+msgid "Do you want to insert a dropdown shortcode?"
+msgstr ""
+
+#: localization/fp-localized-script.php:74
+msgid "Do you want to insert an interchange shortcode?"
+msgstr ""
+
+#: localization/fp-localized-script.php:75
+msgid "Content for slide #"
+msgstr ""
+
+#: localization/fp-localized-script.php:76
+msgid "No Gutter"
+msgstr ""
+
+#: localization/fp-localized-script.php:77
+msgid "Number of columns"
+msgstr ""
+
+#: localization/fp-localized-script.php:78
+msgid "Expanded Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:79
+msgid "Offsets"
+msgstr ""
+
+#: localization/fp-localized-script.php:80
+msgid "Source Ordering"
+msgstr ""
+
+#: localization/fp-localized-script.php:81
+msgid "Block Grids"
+msgstr ""
+
+#: localization/fp-localized-script.php:82
+msgid "Row Equalizer"
+msgstr ""
+
+#: localization/fp-localized-script.php:83
+msgid "Equalizer"
+msgstr ""
+
+#: localization/fp-localized-script.php:84
+msgid "Small Collapse / Uncollapse Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:85
+msgid "Medium Collapse / Uncollapse Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:86
+msgid "Large Collapse / Uncollapse Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:87
+msgid "Collapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:88
+msgid "Small Collapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:89
+msgid "Medium Collapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:90
+msgid "Large Collapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:91
+msgid "Small Uncollapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:92
+msgid "Medium Uncollapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:93
+msgid "Large Uncollapse"
+msgstr ""
+
+#: localization/fp-localized-script.php:94
+msgid "Small Centered / Uncentered Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:95
+msgid "Medium Centered / Uncentered Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:96
+msgid "Large Centered / Uncentered Row"
+msgstr ""
+
+#: localization/fp-localized-script.php:97
+msgid "Centered"
+msgstr ""
+
+#: localization/fp-localized-script.php:98
+msgid "Small Centered"
+msgstr ""
+
+#: localization/fp-localized-script.php:99
+msgid "Medium Centered"
+msgstr ""
+
+#: localization/fp-localized-script.php:100
+msgid "Large Centered"
+msgstr ""
+
+#: localization/fp-localized-script.php:101
+msgid "Small Uncentered"
+msgstr ""
+
+#: localization/fp-localized-script.php:102
+msgid "Medium Uncentered"
+msgstr ""
+
+#: localization/fp-localized-script.php:103
+msgid "Large Uncentered"
+msgstr ""
+
+#: localization/fp-localized-script.php:104
+msgid "Float"
+msgstr ""
+
+#: localization/fp-localized-script.php:105
+msgid "Float Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:106
+msgid "Float Left"
+msgstr ""
+
+#: localization/fp-localized-script.php:107
+msgid "Float Right"
+msgstr ""
+
+#: localization/fp-localized-script.php:108
+msgid "Float Center"
+msgstr ""
+
+#: localization/fp-localized-script.php:109
+msgid "Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:110
+msgid "Orientation Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:111
+msgid "Small Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:112
+msgid "Medium Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:113
+msgid "Large Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:114
+msgid "Extra Large Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:115
+msgid "Portrait Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:116
+msgid "Landscape Visibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:117
+msgid "Accessibility Classes"
+msgstr ""
+
+#: localization/fp-localized-script.php:118
+msgid "Show on small screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:119
+msgid "Show on medium screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:120
+msgid "Show on medium and small screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:121
+msgid "Show on large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:122
+msgid "Show on x large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:123
+msgid "Show on xx large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:124
+msgid "Show on portrait screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:125
+msgid "Show on landscape screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:126
+msgid "Show only on small screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:127
+msgid "Show only on medium screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:128
+msgid "Show only on large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:129
+msgid "Show only on x large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:130
+msgid "Hide on small screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:131
+msgid "Hide on medium screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:132
+msgid "Hide on medium and small screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:133
+msgid "Hide on large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:134
+msgid "Hide on x large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:135
+msgid "Hide on xx large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:136
+msgid "Hide only on small screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:137
+msgid "Hide only on medium screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:138
+msgid "Hide only on large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:139
+msgid "Hide only on x large screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:140
+msgid "Hide on portrait screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:141
+msgid "Hide on landscape screen size"
+msgstr ""
+
+#: localization/fp-localized-script.php:142
+msgid "Show for screen readers"
+msgstr ""
+
+#: localization/fp-localized-script.php:143
+msgid "Menus"
+msgstr ""
+
+#: localization/fp-localized-script.php:144
+msgid "Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:145
+msgid "Menu Item"
+msgstr ""
+
+#: localization/fp-localized-script.php:146
+msgid "Submenu Item"
+msgstr ""
+
+#: localization/fp-localized-script.php:147
+msgid "Menu Type"
+msgstr ""
+
+#: localization/fp-localized-script.php:148
+msgid "Nested Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:149
+msgid "Basic Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:150
+msgid "Vertical Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:151
+msgid "Accordion Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:152
+msgid "Dropdown Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:153
+msgid "Drilldown Menu"
+msgstr ""
+
+#: localization/fp-localized-script.php:154
+msgid "Elements"
+msgstr ""
+
+#: localization/fp-localized-script.php:155
+msgid "Default"
+msgstr ""
+
+#: localization/fp-localized-script.php:156
+msgid "Closable"
+msgstr ""
+
+#: localization/fp-localized-script.php:157
+#: localization/fp-localized-script.php:243
+msgid "Top"
+msgstr ""
+
+#: localization/fp-localized-script.php:158
+#: localization/fp-localized-script.php:238
+msgid "Right"
+msgstr ""
+
+#: localization/fp-localized-script.php:159
+#: localization/fp-localized-script.php:239
+msgid "Left"
+msgstr ""
+
+#: localization/fp-localized-script.php:160
+#: localization/fp-localized-script.php:245
+msgid "Bottom"
+msgstr ""
+
+#: localization/fp-localized-script.php:161
+msgid "Boxes"
+msgstr ""
+
+#: localization/fp-localized-script.php:162
+msgid "Presentation Boxes"
+msgstr ""
+
+#: localization/fp-localized-script.php:163
+#: localization/fp-localized-script.php:452
+msgid "Layout"
+msgstr ""
+
+#: localization/fp-localized-script.php:164
+msgid "Image for box #"
+msgstr ""
+
+#: localization/fp-localized-script.php:165
+msgid "Title for box #"
+msgstr ""
+
+#: localization/fp-localized-script.php:166
+msgid "Text for box #"
+msgstr ""
+
+#: localization/fp-localized-script.php:167
+msgid "Carousel Boxes"
+msgstr ""
+
+#: localization/fp-localized-script.php:168
+msgid "Typography"
+msgstr ""
+
+#: localization/fp-localized-script.php:169
+msgid "Lists"
+msgstr ""
+
+#: localization/fp-localized-script.php:170
+msgid "Type"
+msgstr ""
+
+#: localization/fp-localized-script.php:171
+msgid "Unordered List"
+msgstr ""
+
+#: localization/fp-localized-script.php:172
+msgid "Ordered List"
+msgstr ""
+
+#: localization/fp-localized-script.php:173
+msgid "Description List"
+msgstr ""
+
+#: localization/fp-localized-script.php:174
+msgid "Style"
+msgstr ""
+
+#: localization/fp-localized-script.php:175
+msgid "List Item #"
+msgstr ""
+
+#: localization/fp-localized-script.php:176
+msgid "Description for Item #"
+msgstr ""
+
+#: localization/fp-localized-script.php:177
+msgid "Blockquotes"
+msgstr ""
+
+#: localization/fp-localized-script.php:178
+msgid "Quote Text"
+msgstr ""
+
+#: localization/fp-localized-script.php:179
+msgid "Dividers"
+msgstr ""
+
+#: localization/fp-localized-script.php:180
+msgid "Containers"
+msgstr ""
+
+#: localization/fp-localized-script.php:182
+msgid "Standard"
+msgstr ""
+
+#: localization/fp-localized-script.php:183
+#: localization/fp-localized-script.php:185
+msgid "Primary"
+msgstr ""
+
+#: localization/fp-localized-script.php:184
+msgid "Secondary"
+msgstr ""
+
+#: localization/fp-localized-script.php:186
+msgid "Success"
+msgstr ""
+
+#: localization/fp-localized-script.php:187
+msgid "Warning"
+msgstr ""
+
+#: localization/fp-localized-script.php:188
+#: localization/fp-localized-script.php:547
+msgid "Alert"
+msgstr ""
+
+#: localization/fp-localized-script.php:189
+msgid "Callout Message"
+msgstr ""
+
+#: localization/fp-localized-script.php:190
+msgid "Badge"
+msgstr ""
+
+#: localization/fp-localized-script.php:191
+msgid "Theme Accent"
+msgstr ""
+
+#: localization/fp-localized-script.php:192
+#: localization/fp-localized-script.php:456
+msgid "Info"
+msgstr ""
+
+#: localization/fp-localized-script.php:193
+msgid "B"
+msgstr ""
+
+#: localization/fp-localized-script.php:194
+msgid "Buttons"
+msgstr ""
+
+#: localization/fp-localized-script.php:196
+#: localization/fp-localized-script.php:449
+msgid "Link"
+msgstr ""
+
+#: localization/fp-localized-script.php:197
+msgid "Size"
+msgstr ""
+
+#: localization/fp-localized-script.php:198
+msgid "Color"
+msgstr ""
+
+#: localization/fp-localized-script.php:199
+msgid "Shape"
+msgstr ""
+
+#: localization/fp-localized-script.php:200
+msgid "Position"
+msgstr ""
+
+#: localization/fp-localized-script.php:201
+msgid "Width"
+msgstr ""
+
+#: localization/fp-localized-script.php:202
+msgid "Height"
+msgstr ""
+
+#: localization/fp-localized-script.php:203
+msgid "Image"
+msgstr ""
+
+#: localization/fp-localized-script.php:204
+msgid "HTML"
+msgstr ""
+
+#: localization/fp-localized-script.php:206
+msgid "Submit"
+msgstr ""
+
+#: localization/fp-localized-script.php:207
+msgid "Reset"
+msgstr ""
+
+#: localization/fp-localized-script.php:208
+msgid "Tiny"
+msgstr ""
+
+#: localization/fp-localized-script.php:211
+msgid "Full"
+msgstr ""
+
+#: localization/fp-localized-script.php:212
+msgid "Expanded"
+msgstr ""
+
+#: localization/fp-localized-script.php:213
+msgid "Expand"
+msgstr ""
+
+#: localization/fp-localized-script.php:214
+msgid "Small Expanded"
+msgstr ""
+
+#: localization/fp-localized-script.php:215
+msgid "Disabled"
+msgstr ""
+
+#: localization/fp-localized-script.php:216
+msgid "Dropdown"
+msgstr ""
+
+#: localization/fp-localized-script.php:217
+msgid "Split"
+msgstr ""
+
+#: localization/fp-localized-script.php:218
+msgid "Hollow"
+msgstr ""
+
+#: localization/fp-localized-script.php:219
+msgid "Hollow Standard"
+msgstr ""
+
+#: localization/fp-localized-script.php:220
+msgid "Hollow Theme Accent"
+msgstr ""
+
+#: localization/fp-localized-script.php:221
+msgid "Hollow Secondary"
+msgstr ""
+
+#: localization/fp-localized-script.php:222
+msgid "Hollow Success"
+msgstr ""
+
+#: localization/fp-localized-script.php:223
+msgid "Hollow Warning"
+msgstr ""
+
+#: localization/fp-localized-script.php:224
+msgid "Hollow Disabled"
+msgstr ""
+
+#: localization/fp-localized-script.php:225
+msgid "Flex Video"
+msgstr ""
+
+#: localization/fp-localized-script.php:226
+msgid "Widescreen"
+msgstr ""
+
+#: localization/fp-localized-script.php:227
+msgid "Vimeo"
+msgstr ""
+
+#: localization/fp-localized-script.php:228
+msgid "Interchange"
+msgstr ""
+
+#: localization/fp-localized-script.php:229
+msgid "Progress"
+msgstr ""
+
+#: localization/fp-localized-script.php:230
+msgid "Reveal"
+msgstr ""
+
+#: localization/fp-localized-script.php:231
+msgid "No overlay"
+msgstr ""
+
+#: localization/fp-localized-script.php:232
+msgid "Tooltip"
+msgstr ""
+
+#: localization/fp-localized-script.php:233
+msgid "Hover"
+msgstr ""
+
+#: localization/fp-localized-script.php:234
+msgid "Responsive Adjustments"
+msgstr ""
+
+#: localization/fp-localized-script.php:235
+msgid "Align"
+msgstr ""
+
+#: localization/fp-localized-script.php:236
+msgid "Horizontal Align"
+msgstr ""
+
+#: localization/fp-localized-script.php:237
+msgid "Vertical Align"
+msgstr ""
+
+#: localization/fp-localized-script.php:240
+msgid "Center"
+msgstr ""
+
+#: localization/fp-localized-script.php:241
+msgid "Justify"
+msgstr ""
+
+#: localization/fp-localized-script.php:242
+msgid "Spaced"
+msgstr ""
+
+#: localization/fp-localized-script.php:244
+msgid "Middle"
+msgstr ""
+
+#: localization/fp-localized-script.php:246
+msgid "Stretch"
+msgstr ""
+
+#: localization/fp-localized-script.php:247
+msgid "Medium Expand"
+msgstr ""
+
+#: localization/fp-localized-script.php:248
+msgid "Large Expand"
+msgstr ""
+
+#: localization/fp-localized-script.php:249
+msgid "Medium Unstack"
+msgstr ""
+
+#: localization/fp-localized-script.php:250
+msgid "Large Unstack"
+msgstr ""
+
+#: localization/fp-localized-script.php:251
+msgid "Shrink"
+msgstr ""
+
+#: localization/fp-localized-script.php:252
+msgid "Pages & Posts Query"
+msgstr ""
+
+#: localization/fp-localized-script.php:253
+msgid "Number of posts to display"
+msgstr ""
+
+#: localization/fp-localized-script.php:254
+msgid "Ignore sticky posts"
+msgstr ""
+
+#: localization/fp-localized-script.php:255
+msgid "Display posts by category slug"
+msgstr ""
+
+#: localization/fp-localized-script.php:256
+msgid "Display posts by tags"
+msgstr ""
+
+#: localization/fp-localized-script.php:257
+msgid "Display posts by post type"
+msgstr ""
+
+#: localization/fp-localized-script.php:258
+msgid "Don\\'t display the title"
+msgstr ""
+
+#: localization/fp-localized-script.php:259
+msgid "Don\\'t display the date"
+msgstr ""
+
+#: localization/fp-localized-script.php:260
+msgid "Don\\'t display the cat"
+msgstr ""
+
+#: localization/fp-localized-script.php:261
+msgid "Don\\'t display the tags"
+msgstr ""
+
+#: localization/fp-localized-script.php:262
+msgid "Don\\'t display the author"
+msgstr ""
+
+#: localization/fp-localized-script.php:263
+msgid "Don\\'t display the excerpt"
+msgstr ""
+
+#: localization/fp-localized-script.php:264
+msgid "Don\\'t display the thumbnail"
+msgstr ""
+
+#: localization/fp-localized-script.php:265
+msgid "Don\\'t display the comments"
+msgstr ""
+
+#: localization/fp-localized-script.php:266
+msgid "Display in a carousel"
+msgstr ""
+
+#: localization/fp-localized-script.php:267
+msgid "The shortcode accepts all parameters from the WP_Query."
+msgstr ""
+
+#: localization/fp-localized-script.php:268
+msgid "Read the documentation for more information."
+msgstr ""
+
+#: localization/fp-localized-script.php:269
+msgid "Zoom Out"
+msgstr ""
+
+#: localization/fp-localized-script.php:270
+msgid "Zoom In"
+msgstr ""
+
+#: localization/fp-localized-script.php:271
+msgid "Yen"
+msgstr ""
+
+#: localization/fp-localized-script.php:272
+msgid "X"
+msgstr ""
+
+#: localization/fp-localized-script.php:273
+msgid "X Circle"
+msgstr ""
+
+#: localization/fp-localized-script.php:274
+msgid "Wrench"
+msgstr ""
+
+#: localization/fp-localized-script.php:275
+msgid "Widget"
+msgstr ""
+
+#: localization/fp-localized-script.php:276
+msgid "Wheelchair"
+msgstr ""
+
+#: localization/fp-localized-script.php:277
+msgid "Web"
+msgstr ""
+
+#: localization/fp-localized-script.php:278
+msgid "Volume"
+msgstr ""
+
+#: localization/fp-localized-script.php:279
+msgid "Volume Strike"
+msgstr ""
+
+#: localization/fp-localized-script.php:280
+msgid "Volume None"
+msgstr ""
+
+#: localization/fp-localized-script.php:281
+msgid "Video"
+msgstr ""
+
+#: localization/fp-localized-script.php:282
+msgid "USB"
+msgstr ""
+
+#: localization/fp-localized-script.php:283
+msgid "Upload"
+msgstr ""
+
+#: localization/fp-localized-script.php:284
+msgid "Upload Cloud"
+msgstr ""
+
+#: localization/fp-localized-script.php:285
+msgid "Unlock"
+msgstr ""
+
+#: localization/fp-localized-script.php:286
+msgid "Unlink"
+msgstr ""
+
+#: localization/fp-localized-script.php:287
+msgid "Universal Access"
+msgstr ""
+
+#: localization/fp-localized-script.php:288
+msgid "Underline"
+msgstr ""
+
+#: localization/fp-localized-script.php:289
+msgid "Trophy"
+msgstr ""
+
+#: localization/fp-localized-script.php:290
+msgid "Trees"
+msgstr ""
+
+#: localization/fp-localized-script.php:291
+msgid "Trash"
+msgstr ""
+
+#: localization/fp-localized-script.php:292
+msgid "Torsos"
+msgstr ""
+
+#: localization/fp-localized-script.php:293
+msgid "Torsos Male Female"
+msgstr ""
+
+#: localization/fp-localized-script.php:294
+msgid "Torsos Female Male"
+msgstr ""
+
+#: localization/fp-localized-script.php:295
+msgid "Torsos All"
+msgstr ""
+
+#: localization/fp-localized-script.php:296
+msgid "Torsos All Female"
+msgstr ""
+
+#: localization/fp-localized-script.php:297
+msgid "Torso"
+msgstr ""
+
+#: localization/fp-localized-script.php:298
+msgid "Torso Female"
+msgstr ""
+
+#: localization/fp-localized-script.php:299
+msgid "Torso Business"
+msgstr ""
+
+#: localization/fp-localized-script.php:300
+msgid "Ticket"
+msgstr ""
+
+#: localization/fp-localized-script.php:301
+msgid "Thumbnails"
+msgstr ""
+
+#: localization/fp-localized-script.php:302
+msgid "Text Color"
+msgstr ""
+
+#: localization/fp-localized-script.php:303
+msgid "Telephone"
+msgstr ""
+
+#: localization/fp-localized-script.php:304
+msgid "Telephone Accessible"
+msgstr ""
+
+#: localization/fp-localized-script.php:305
+msgid "Target"
+msgstr ""
+
+#: localization/fp-localized-script.php:306
+msgid "Target Two"
+msgstr ""
+
+#: localization/fp-localized-script.php:307
+msgid "Tablet Portrait"
+msgstr ""
+
+#: localization/fp-localized-script.php:308
+msgid "Tablet Landscape"
+msgstr ""
+
+#: localization/fp-localized-script.php:309
+msgid "Superscript"
+msgstr ""
+
+#: localization/fp-localized-script.php:310
+msgid "Subscript"
+msgstr ""
+
+#: localization/fp-localized-script.php:311
+msgid "Strikethrough"
+msgstr ""
+
+#: localization/fp-localized-script.php:312
+msgid "Stop"
+msgstr ""
+
+#: localization/fp-localized-script.php:313
+msgid "Star"
+msgstr ""
+
+#: localization/fp-localized-script.php:314
+msgid "Sound"
+msgstr ""
+
+#: localization/fp-localized-script.php:315
+msgid "Social Zurb"
+msgstr ""
+
+#: localization/fp-localized-script.php:316
+msgid "Social Zerply"
+msgstr ""
+
+#: localization/fp-localized-script.php:317
+msgid "Social Youtube"
+msgstr ""
+
+#: localization/fp-localized-script.php:318
+msgid "Social Yelp"
+msgstr ""
+
+#: localization/fp-localized-script.php:319
+msgid "Social Yahoo"
+msgstr ""
+
+#: localization/fp-localized-script.php:320
+msgid "Social Xbox"
+msgstr ""
+
+#: localization/fp-localized-script.php:321
+msgid "Social Windows"
+msgstr ""
+
+#: localization/fp-localized-script.php:322
+msgid "Social Vimeo"
+msgstr ""
+
+#: localization/fp-localized-script.php:323
+msgid "Social Twitter"
+msgstr ""
+
+#: localization/fp-localized-script.php:324
+msgid "Social Tumblr"
+msgstr ""
+
+#: localization/fp-localized-script.php:325
+msgid "Social Treehouse"
+msgstr ""
+
+#: localization/fp-localized-script.php:326
+msgid "Social Stumbleupon"
+msgstr ""
+
+#: localization/fp-localized-script.php:327
+msgid "Social Steam"
+msgstr ""
+
+#: localization/fp-localized-script.php:328
+msgid "Social Stack Overflow"
+msgstr ""
+
+#: localization/fp-localized-script.php:329
+msgid "Social Squidoo"
+msgstr ""
+
+#: localization/fp-localized-script.php:330
+msgid "Social Spotify"
+msgstr ""
+
+#: localization/fp-localized-script.php:331
+msgid "Social Snapchat"
+msgstr ""
+
+#: localization/fp-localized-script.php:332
+msgid "Social Smashing Mag"
+msgstr ""
+
+#: localization/fp-localized-script.php:333
+msgid "Social Skype"
+msgstr ""
+
+#: localization/fp-localized-script.php:334
+msgid "Social Skillshare"
+msgstr ""
+
+#: localization/fp-localized-script.php:335
+msgid "Social Reddit"
+msgstr ""
+
+#: localization/fp-localized-script.php:336
+msgid "Social Rdio"
+msgstr ""
+
+#: localization/fp-localized-script.php:337
+msgid "Social Pinterest"
+msgstr ""
+
+#: localization/fp-localized-script.php:338
+msgid "Social Picasa"
+msgstr ""
+
+#: localization/fp-localized-script.php:339
+msgid "Social Path"
+msgstr ""
+
+#: localization/fp-localized-script.php:340
+msgid "Social Orkut"
+msgstr ""
+
+#: localization/fp-localized-script.php:341
+msgid "Social Myspace"
+msgstr ""
+
+#: localization/fp-localized-script.php:342
+msgid "Social Medium"
+msgstr ""
+
+#: localization/fp-localized-script.php:343
+msgid "Social Linkedin"
+msgstr ""
+
+#: localization/fp-localized-script.php:344
+msgid "Social Lastfm"
+msgstr ""
+
+#: localization/fp-localized-script.php:345
+msgid "Social Joomla"
+msgstr ""
+
+#: localization/fp-localized-script.php:346
+msgid "Social Instagram"
+msgstr ""
+
+#: localization/fp-localized-script.php:347
+msgid "Social hi5"
+msgstr ""
+
+#: localization/fp-localized-script.php:348
+msgid "Social Hacker News"
+msgstr ""
+
+#: localization/fp-localized-script.php:349
+msgid "Social Google Plus"
+msgstr ""
+
+#: localization/fp-localized-script.php:350
+msgid "Social Github"
+msgstr ""
+
+#: localization/fp-localized-script.php:351
+msgid "Social Game Center"
+msgstr ""
+
+#: localization/fp-localized-script.php:352
+msgid "Social Foursquare"
+msgstr ""
+
+#: localization/fp-localized-script.php:353
+msgid "Social Forrst"
+msgstr ""
+
+#: localization/fp-localized-script.php:354
+msgid "Social Flickr"
+msgstr ""
+
+#: localization/fp-localized-script.php:355
+msgid "Social Facebook"
+msgstr ""
+
+#: localization/fp-localized-script.php:356
+msgid "Social Evernote"
+msgstr ""
+
+#: localization/fp-localized-script.php:357
+msgid "Social Dropbox"
+msgstr ""
+
+#: localization/fp-localized-script.php:358
+msgid "Social Drive"
+msgstr ""
+
+#: localization/fp-localized-script.php:359
+msgid "Social Dribbble"
+msgstr ""
+
+#: localization/fp-localized-script.php:360
+msgid "Social Digg"
+msgstr ""
+
+#: localization/fp-localized-script.php:361
+msgid "Social Deviant Art"
+msgstr ""
+
+#: localization/fp-localized-script.php:362
+msgid "Social Designer News"
+msgstr ""
+
+#: localization/fp-localized-script.php:363
+msgid "Social Delicious"
+msgstr ""
+
+#: localization/fp-localized-script.php:364
+msgid "Social Blogger"
+msgstr ""
+
+#: localization/fp-localized-script.php:365
+msgid "Social Bing"
+msgstr ""
+
+#: localization/fp-localized-script.php:366
+msgid "Social Behance"
+msgstr ""
+
+#: localization/fp-localized-script.php:367
+msgid "Social Apple"
+msgstr ""
+
+#: localization/fp-localized-script.php:368
+msgid "Social Android"
+msgstr ""
+
+#: localization/fp-localized-script.php:369
+msgid "Social Amazon"
+msgstr ""
+
+#: localization/fp-localized-script.php:370
+msgid "Social Adobe"
+msgstr ""
+
+#: localization/fp-localized-script.php:371
+msgid "Social 500px"
+msgstr ""
+
+#: localization/fp-localized-script.php:372
+msgid "Skull"
+msgstr ""
+
+#: localization/fp-localized-script.php:373
+msgid "Shuffle"
+msgstr ""
+
+#: localization/fp-localized-script.php:374
+msgid "Shopping Cart"
+msgstr ""
+
+#: localization/fp-localized-script.php:375
+msgid "Shopping Bag"
+msgstr ""
+
+#: localization/fp-localized-script.php:376
+msgid "Shield"
+msgstr ""
+
+#: localization/fp-localized-script.php:377
+msgid "Sheriff Badge"
+msgstr ""
+
+#: localization/fp-localized-script.php:378
+msgid "Share"
+msgstr ""
+
+#: localization/fp-localized-script.php:379
+msgid "Save"
+msgstr ""
+
+#: localization/fp-localized-script.php:380
+msgid "Safety Cone"
+msgstr ""
+
+#: localization/fp-localized-script.php:381
+msgid "RSS"
+msgstr ""
+
+#: localization/fp-localized-script.php:382
+msgid "Rewind"
+msgstr ""
+
+#: localization/fp-localized-script.php:383
+msgid "Rewind Ten"
+msgstr ""
+
+#: localization/fp-localized-script.php:384
+msgid "Results"
+msgstr ""
+
+#: localization/fp-localized-script.php:385
+msgid "Results Demographics"
+msgstr ""
+
+#: localization/fp-localized-script.php:386
+msgid "Refresh"
+msgstr ""
+
+#: localization/fp-localized-script.php:387
+msgid "Record"
+msgstr ""
+
+#: localization/fp-localized-script.php:388
+msgid "Puzzle"
+msgstr ""
+
+#: localization/fp-localized-script.php:389
+msgid "Projection Screen"
+msgstr ""
+
+#: localization/fp-localized-script.php:390
+msgid "Prohibited"
+msgstr ""
+
+#: localization/fp-localized-script.php:391
+msgid "Print"
+msgstr ""
+
+#: localization/fp-localized-script.php:392
+msgid "Pricetag Multiple"
+msgstr ""
+
+#: localization/fp-localized-script.php:393
+msgid "Price Tag"
+msgstr ""
+
+#: localization/fp-localized-script.php:394
+msgid "Previous"
+msgstr ""
+
+#: localization/fp-localized-script.php:395
+msgid "Power"
+msgstr ""
+
+#: localization/fp-localized-script.php:396
+msgid "Pound"
+msgstr ""
+
+#: localization/fp-localized-script.php:397
+msgid "Plus"
+msgstr ""
+
+#: localization/fp-localized-script.php:398
+msgid "Play"
+msgstr ""
+
+#: localization/fp-localized-script.php:399
+msgid "Play Video"
+msgstr ""
+
+#: localization/fp-localized-script.php:400
+msgid "Play Circle"
+msgstr ""
+
+#: localization/fp-localized-script.php:401
+msgid "Photo"
+msgstr ""
+
+#: localization/fp-localized-script.php:402
+msgid "Pencil"
+msgstr ""
+
+#: localization/fp-localized-script.php:403
+msgid "Paypal"
+msgstr ""
+
+#: localization/fp-localized-script.php:404
+msgid "Paw"
+msgstr ""
+
+#: localization/fp-localized-script.php:405
+msgid "Pause"
+msgstr ""
+
+#: localization/fp-localized-script.php:406
+msgid "Paperclip"
+msgstr ""
+
+#: localization/fp-localized-script.php:407
+msgid "Paint Bucket"
+msgstr ""
+
+#: localization/fp-localized-script.php:408
+msgid "Page"
+msgstr ""
+
+#: localization/fp-localized-script.php:409
+msgid "Page Search"
+msgstr ""
+
+#: localization/fp-localized-script.php:410
+msgid "Page Remove"
+msgstr ""
+
+#: localization/fp-localized-script.php:411
+msgid "Page PDF"
+msgstr ""
+
+#: localization/fp-localized-script.php:412
+msgid "Page Multiple"
+msgstr ""
+
+#: localization/fp-localized-script.php:413
+msgid "Page Filled"
+msgstr ""
+
+#: localization/fp-localized-script.php:414
+msgid "Page Export"
+msgstr ""
+
+#: localization/fp-localized-script.php:415
+msgid "Page Export PDF"
+msgstr ""
+
+#: localization/fp-localized-script.php:416
+msgid "Page Export Doc"
+msgstr ""
+
+#: localization/fp-localized-script.php:417
+msgid "Page Export CSV"
+msgstr ""
+
+#: localization/fp-localized-script.php:418
+msgid "Page Edit"
+msgstr ""
+
+#: localization/fp-localized-script.php:419
+msgid "Page DOC"
+msgstr ""
+
+#: localization/fp-localized-script.php:420
+msgid "Page Delete"
+msgstr ""
+
+#: localization/fp-localized-script.php:421
+msgid "Page CSV"
+msgstr ""
+
+#: localization/fp-localized-script.php:422
+msgid "Page Copy"
+msgstr ""
+
+#: localization/fp-localized-script.php:423
+msgid "Page Add"
+msgstr ""
+
+#: localization/fp-localized-script.php:424
+msgid "No Smoking"
+msgstr ""
+
+#: localization/fp-localized-script.php:425
+msgid "No Dogs"
+msgstr ""
+
+#: localization/fp-localized-script.php:426
+msgid "Next"
+msgstr ""
+
+#: localization/fp-localized-script.php:427
+msgid "Music"
+msgstr ""
+
+#: localization/fp-localized-script.php:428
+msgid "Mountains"
+msgstr ""
+
+#: localization/fp-localized-script.php:429
+msgid "Monitor"
+msgstr ""
+
+#: localization/fp-localized-script.php:430
+msgid "Mobile"
+msgstr ""
+
+#: localization/fp-localized-script.php:431
+msgid "Mobile Signal"
+msgstr ""
+
+#: localization/fp-localized-script.php:432
+msgid "Minus"
+msgstr ""
+
+#: localization/fp-localized-script.php:433
+msgid "Minus Circle"
+msgstr ""
+
+#: localization/fp-localized-script.php:434
+msgid "Microphone"
+msgstr ""
+
+#: localization/fp-localized-script.php:435
+msgid "Megaphone"
+msgstr ""
+
+#: localization/fp-localized-script.php:436
+msgid "Marker"
+msgstr ""
+
+#: localization/fp-localized-script.php:437
+msgid "Map"
+msgstr ""
+
+#: localization/fp-localized-script.php:438
+msgid "Male"
+msgstr ""
+
+#: localization/fp-localized-script.php:439
+msgid "Male Symbol"
+msgstr ""
+
+#: localization/fp-localized-script.php:440
+msgid "Male Female"
+msgstr ""
+
+#: localization/fp-localized-script.php:441
+msgid "Mail"
+msgstr ""
+
+#: localization/fp-localized-script.php:442
+msgid "Magnifying Glass"
+msgstr ""
+
+#: localization/fp-localized-script.php:443
+msgid "Loop"
+msgstr ""
+
+#: localization/fp-localized-script.php:444
+msgid "Lock"
+msgstr ""
+
+#: localization/fp-localized-script.php:445
+msgid "List"
+msgstr ""
+
+#: localization/fp-localized-script.php:446
+msgid "List Thumbnails"
+msgstr ""
+
+#: localization/fp-localized-script.php:447
+msgid "List Number"
+msgstr ""
+
+#: localization/fp-localized-script.php:448
+msgid "List Bullet"
+msgstr ""
+
+#: localization/fp-localized-script.php:450
+msgid "Like"
+msgstr ""
+
+#: localization/fp-localized-script.php:451
+msgid "Lightbulb"
+msgstr ""
+
+#: localization/fp-localized-script.php:453
+msgid "Laptop"
+msgstr ""
+
+#: localization/fp-localized-script.php:454
+msgid "Key"
+msgstr ""
+
+#: localization/fp-localized-script.php:455
+msgid "Italic"
+msgstr ""
+
+#: localization/fp-localized-script.php:457
+msgid "Indent More"
+msgstr ""
+
+#: localization/fp-localized-script.php:458
+msgid "Indent Less"
+msgstr ""
+
+#: localization/fp-localized-script.php:459
+msgid "HTML5"
+msgstr ""
+
+#: localization/fp-localized-script.php:460
+msgid "Home"
+msgstr ""
+
+#: localization/fp-localized-script.php:461
+msgid "Heart"
+msgstr ""
+
+#: localization/fp-localized-script.php:462
+msgid "Hearing Aid"
+msgstr ""
+
+#: localization/fp-localized-script.php:463
+msgid "Guide Dog"
+msgstr ""
+
+#: localization/fp-localized-script.php:464
+msgid "Graph Trend"
+msgstr ""
+
+#: localization/fp-localized-script.php:465
+msgid "Graph Pie"
+msgstr ""
+
+#: localization/fp-localized-script.php:466
+msgid "Graph Horizontal"
+msgstr ""
+
+#: localization/fp-localized-script.php:467
+msgid "Graph Bar"
+msgstr ""
+
+#: localization/fp-localized-script.php:468
+msgid "Foundation"
+msgstr ""
+
+#: localization/fp-localized-script.php:469
+msgid "Foot"
+msgstr ""
+
+#: localization/fp-localized-script.php:470
+msgid "Folder"
+msgstr ""
+
+#: localization/fp-localized-script.php:471
+msgid "Folder Lock"
+msgstr ""
+
+#: localization/fp-localized-script.php:472
+msgid "Folder Add"
+msgstr ""
+
+#: localization/fp-localized-script.php:473
+msgid "Flag"
+msgstr ""
+
+#: localization/fp-localized-script.php:474
+msgid "First Aid"
+msgstr ""
+
+#: localization/fp-localized-script.php:475
+msgid "Filter"
+msgstr ""
+
+#: localization/fp-localized-script.php:476
+msgid "Female"
+msgstr ""
+
+#: localization/fp-localized-script.php:477
+msgid "Female Symbol"
+msgstr ""
+
+#: localization/fp-localized-script.php:478
+msgid "Fast Forward"
+msgstr ""
+
+#: localization/fp-localized-script.php:479
+msgid "Eye"
+msgstr ""
+
+#: localization/fp-localized-script.php:480
+msgid "Euro"
+msgstr ""
+
+#: localization/fp-localized-script.php:481
+msgid "Elevator"
+msgstr ""
+
+#: localization/fp-localized-script.php:482
+msgid "Eject"
+msgstr ""
+
+#: localization/fp-localized-script.php:483
+msgid "Download"
+msgstr ""
+
+#: localization/fp-localized-script.php:484
+msgid "Dollar"
+msgstr ""
+
+#: localization/fp-localized-script.php:485
+msgid "Dollar Bill"
+msgstr ""
+
+#: localization/fp-localized-script.php:486
+msgid "Dislike"
+msgstr ""
+
+#: localization/fp-localized-script.php:487
+msgid "Die Two"
+msgstr ""
+
+#: localization/fp-localized-script.php:488
+msgid "Die Three"
+msgstr ""
+
+#: localization/fp-localized-script.php:489
+msgid "Die Six"
+msgstr ""
+
+#: localization/fp-localized-script.php:490
+msgid "Die One"
+msgstr ""
+
+#: localization/fp-localized-script.php:491
+msgid "Die Four"
+msgstr ""
+
+#: localization/fp-localized-script.php:492
+msgid "Die Five"
+msgstr ""
+
+#: localization/fp-localized-script.php:493
+msgid "Database"
+msgstr ""
+
+#: localization/fp-localized-script.php:494
+msgid "CSS3"
+msgstr ""
+
+#: localization/fp-localized-script.php:495
+msgid "Crown"
+msgstr ""
+
+#: localization/fp-localized-script.php:496
+msgid "Crop"
+msgstr ""
+
+#: localization/fp-localized-script.php:497
+msgid "Credit Card"
+msgstr ""
+
+#: localization/fp-localized-script.php:498
+msgid "Contrast"
+msgstr ""
+
+#: localization/fp-localized-script.php:499
+msgid "Compass"
+msgstr ""
+
+#: localization/fp-localized-script.php:500
+msgid "Comments"
+msgstr ""
+
+#: localization/fp-localized-script.php:501
+msgid "Comment"
+msgstr ""
+
+#: localization/fp-localized-script.php:502
+msgid "Comment Video"
+msgstr ""
+
+#: localization/fp-localized-script.php:503
+msgid "Comment Quotes"
+msgstr ""
+
+#: localization/fp-localized-script.php:504
+msgid "Comment Minus"
+msgstr ""
+
+#: localization/fp-localized-script.php:505
+msgid "Cloud"
+msgstr ""
+
+#: localization/fp-localized-script.php:506
+msgid "Closed Caption"
+msgstr ""
+
+#: localization/fp-localized-script.php:507
+msgid "Clock"
+msgstr ""
+
+#: localization/fp-localized-script.php:508
+msgid "Clipboard"
+msgstr ""
+
+#: localization/fp-localized-script.php:509
+msgid "Clipboard Pencil"
+msgstr ""
+
+#: localization/fp-localized-script.php:510
+msgid "Clipboard Notes"
+msgstr ""
+
+#: localization/fp-localized-script.php:511
+msgid "Checkbox"
+msgstr ""
+
+#: localization/fp-localized-script.php:512
+msgid "Check"
+msgstr ""
+
+#: localization/fp-localized-script.php:513
+msgid "Camera"
+msgstr ""
+
+#: localization/fp-localized-script.php:514
+msgid "Calendar"
+msgstr ""
+
+#: localization/fp-localized-script.php:515
+msgid "Burst"
+msgstr ""
+
+#: localization/fp-localized-script.php:516
+msgid "Burst Sale"
+msgstr ""
+
+#: localization/fp-localized-script.php:517
+msgid "Burst New"
+msgstr ""
+
+#: localization/fp-localized-script.php:518
+msgid "Braille"
+msgstr ""
+
+#: localization/fp-localized-script.php:519
+msgid "Bookmark"
+msgstr ""
+
+#: localization/fp-localized-script.php:520
+msgid "Book"
+msgstr ""
+
+#: localization/fp-localized-script.php:521
+msgid "Book Bookmark"
+msgstr ""
+
+#: localization/fp-localized-script.php:522
+msgid "Bold"
+msgstr ""
+
+#: localization/fp-localized-script.php:523
+msgid "Bluetooth"
+msgstr ""
+
+#: localization/fp-localized-script.php:524
+msgid "Blind"
+msgstr ""
+
+#: localization/fp-localized-script.php:525
+msgid "Bitcoin"
+msgstr ""
+
+#: localization/fp-localized-script.php:526
+msgid "Bitcoin-circle"
+msgstr ""
+
+#: localization/fp-localized-script.php:527
+msgid "Battery Empty"
+msgstr ""
+
+#: localization/fp-localized-script.php:528
+msgid "Battery Half"
+msgstr ""
+
+#: localization/fp-localized-script.php:529
+msgid "Battery Full"
+msgstr ""
+
+#: localization/fp-localized-script.php:530
+msgid "At Sign"
+msgstr ""
+
+#: localization/fp-localized-script.php:531
+msgid "Asterisk"
+msgstr ""
+
+#: localization/fp-localized-script.php:532
+msgid "ASL"
+msgstr ""
+
+#: localization/fp-localized-script.php:533
+msgid "Arrows Out"
+msgstr ""
+
+#: localization/fp-localized-script.php:534
+msgid "Arrows In"
+msgstr ""
+
+#: localization/fp-localized-script.php:535
+msgid "Arrows Expand"
+msgstr ""
+
+#: localization/fp-localized-script.php:536
+msgid "Arrows Compress"
+msgstr ""
+
+#: localization/fp-localized-script.php:537
+msgid "Arrow Up"
+msgstr ""
+
+#: localization/fp-localized-script.php:538
+msgid "Arrow Right"
+msgstr ""
+
+#: localization/fp-localized-script.php:539
+msgid "Arrow Left"
+msgstr ""
+
+#: localization/fp-localized-script.php:540
+msgid "Arrow Down"
+msgstr ""
+
+#: localization/fp-localized-script.php:541
+msgid "Archive"
+msgstr ""
+
+#: localization/fp-localized-script.php:542
+msgid "Annotate"
+msgstr ""
+
+#: localization/fp-localized-script.php:543
+msgid "Anchor"
+msgstr ""
+
+#: localization/fp-localized-script.php:544
+msgid "Align Right"
+msgstr ""
+
+#: localization/fp-localized-script.php:545
+msgid "Align Left"
+msgstr ""
+
+#: localization/fp-localized-script.php:546
+msgid "Align Justify"
+msgstr ""
+
+#: localization/fp-localized-script.php:548
+msgid "Address Book"
+msgstr ""

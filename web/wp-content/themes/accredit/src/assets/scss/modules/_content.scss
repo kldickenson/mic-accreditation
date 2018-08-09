@@ -1,0 +1,136 @@
+.main-container {
+  // @include xy-grid-container;
+   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.main-grid {
+  @include flex-grid-row;
+  margin-top: 1rem;
+
+  @include breakpoint(medium only) {
+    // margin-top: 3rem;
+    @include flex-align($x: spaced);
+  }
+
+  &.sidebar-left {
+    // Place the sidebar below main content on small screens ...
+    @include breakpoint(small) {
+      .main-content {
+        order: 1;
+      }
+      .sidebar {
+        order: 2;
+      }
+    } // ... and to the left on medium-up screens, when using the sidebar-left template
+    @include breakpoint(medium) {
+      .main-content {
+        order: 2;
+      }
+      .sidebar {
+        order: 1;
+      }
+    }
+  }
+  // Full width template
+  .main-content-full-width {
+    @include flex-grid-column(12);
+  }
+  // Default template
+  .main-content {
+    font-size: $body-font-size;
+    // margin-top: -3rem;
+    // background-color: $faint-gray;
+
+    @include breakpoint(medium) {
+      @include flex-grid-column(8, $gutters: 0);
+    }
+
+    @include breakpoint(small only) {
+      @include flex-grid-column(12);
+      margin-top: 0;
+    }
+
+    a {
+      border-bottom: 1px solid $anchor-color;
+      &:hover, &:focus  {
+        font-weight: $anchor-font-weight-hover;
+        border-bottom: none;
+      }
+    }
+    h2 {
+      font-weight: $h2-weight;
+    }
+    h3 {
+      font-weight: $h3-weight;
+    }
+    h4 {
+      font-weight: $h4-weight;
+    }
+    h5 {
+      font-weight: $h5-weight;
+    }
+    h6 {
+      font-weight: $h6-weight;
+      text-transform: uppercase;
+    }
+    ul, ol {
+      padding-left: .75rem;
+      li {
+        padding-left: .25rem;
+        text-indent: -.25rem;
+      }
+    }
+
+    article {
+      // padding: 2rem 2rem 0 2rem;
+      @include breakpoint(small only) {
+        padding: 0;
+      }
+
+    }
+  }
+  .sidebar {
+    @include breakpoint(small) {
+      @include flex-grid-column(12);
+    }
+
+    @include breakpoint(medium) {
+      @include flex-grid-column(3, $gutters: 0);
+      margin-top: 1rem;
+    }
+  }
+}
+
+body.search {
+  .main-grid {
+    .main-content {
+      article {
+      padding: 2rem 2rem 0 2rem;
+
+      p {
+        border-bottom: 1px dashed $black-26;
+        padding-bottom: 1.5rem;
+      }
+      }
+    }
+  }
+}
+
+body.error404 {
+  .main-grid {
+    .main-content {
+      article {
+      padding: 2rem 2rem 0 2rem;
+
+      p {
+        border-bottom: 1px dashed $black-26;
+        padding-bottom: 1.5rem;
+        &:nth-child(2n) {
+          border: 0;
+          padding-bottom: 0;
+        }
+      }
+      }
+    }
+  }
+}
