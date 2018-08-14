@@ -3,9 +3,9 @@ before_script:
 
 deploy:
   variables:
-    SSHPASS: $USER_PASS
     CI_DEBUG_TRACE: "true"
   only:
     - master
   script:
+    - export SSHPASS=$USER_PASS
     - sshpass -e ssh kellerch@sftp.itd.umich.edu "ls"
