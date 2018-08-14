@@ -2,7 +2,9 @@ before_script:
   - apt-get update -qq && apt-get install -y -qq sshpass
 
 deploy:
+  variables:
+    CI_DEBUG_TRACE: "true"
   only:
     - master
   script:
-    - sshpass -p "${USER_PASS}" ssh kellerch@sftp.itd.umich.edu 'ls'
+    - sshpass -V
