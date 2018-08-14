@@ -3,8 +3,8 @@ before_script:
 
 deploy:
   variables:
-    CI_DEBUG_TRACE: "true"
+    SSHPASS: $USER_PASS
   only:
     - master
   script:
-    - sshpass -V
+    - sshpass -e ssh kellerch@sftp.itd.umich.edu 'ls'
