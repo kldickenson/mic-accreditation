@@ -6,4 +6,4 @@ deploy:
     - master    
   script:
     - export SSHPASS=$USER_PASS
-    - sshpass -e ssh -t kellerch@sftp.itd.umich.edu 'ls'
+    - sshpass -e ssh kellerch@sftp.itd.umich.edu 'ls'
