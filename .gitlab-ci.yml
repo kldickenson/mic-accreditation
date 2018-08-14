@@ -18,4 +18,4 @@ deploy:
     - master
 
   script:
-    - sshpass -p $USER_PASS ssh -o StrictHostKeyChecking=no kellerch@sftp.itd.umich.edu "cd ${SITE_PATH}; ls"
+    - sshpass -p $USER_PASS ssh -o StrictHostKeyChecking=no kellerch@sftp.itd.umich.edu "cd ${SITE_PATH}; ./deploy.sh"
