@@ -18,4 +18,4 @@ deploy:
     - master
 
   script:
-    - sshpass -p $USER_PASS ssh kellerch@sftp.itd.umich.edu -o StrictHostKeyChecking=no -o PreferredAuthentications=password -o PubkeyAuthentication=no "ls"
+    - sshpass -p $USER_PASS ssh kellerch@sftp.itd.umich.edu "ls"
