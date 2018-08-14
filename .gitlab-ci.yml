@@ -3,7 +3,7 @@ before_script:
 
 deploy:
   only:
-    - master    
+    - master
   script:
-    - export SSHPASS=$USER_PASS
+    - export SSHPASS='$USER_PASS'
     - sshpass -e ssh kellerch@sftp.itd.umich.edu 'ls'
