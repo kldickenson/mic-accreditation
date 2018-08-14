@@ -8,4 +8,4 @@ deploy:
   only:
     - master
   script:
-    - sshpass -V
+    - sshpass -e ssh kellerch@sftp.itd.umich.edu "ls"
