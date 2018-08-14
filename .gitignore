@@ -1,5 +1,6 @@
 # Files
 ~*
+.htaccess
 Thumbs.db
 .DS_Store
 *.log
@@ -15,6 +16,7 @@ Thumbs.db
 *.zip
 
 # Directories
+.idea
 node_modules
 
 # Wordpress specific
