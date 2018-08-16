@@ -28,7 +28,6 @@ PATHS:
     - "node_modules/motion-ui/src"
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
-    - "src/assets/js/animations.js"
     - "src/assets/js/app.js"
     - "!src/assets/js/lib/**/*"
   # Paths for the package task to include/exclude in .zip archive
