@@ -68,8 +68,7 @@
 			<div class="title-bar-left">
 				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 				<span class="site-mobile-title title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>,</a>
-				<div class="um">University of Michigan</div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/logos/acc-signature-stationery-white.png" alt="Accreditation, University of Michigan"></a>
 				</span>
 			</div>
 		</div>

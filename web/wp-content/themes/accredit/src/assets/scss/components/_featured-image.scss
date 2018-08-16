@@ -8,12 +8,11 @@
   height: rem-calc(350);
   transition: all .2s ease;
 
-  @include breakpoint(xlarge down) {
-    height: rem-calc(350);
-  }
-
-  @include breakpoint(medium down) {
-    height: rem-calc(350);
+  &.no-hero {
+    height: auto;
+    .entry-title-wrap {
+      position: relative;
+    }
   }
 
   @include breakpoint(small only) {
