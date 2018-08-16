@@ -3,15 +3,15 @@
  * Plugin Name: Gutenberg
  * Plugin URI: https://github.com/WordPress/gutenberg
  * Description: Printing since 1440. This is the development plugin for the new block editor in core.
- * Version: 3.4.0
+ * Version: 3.5.0
  * Author: Gutenberg Team
  *
  * @package gutenberg
  */
 
 ### BEGIN AUTO-GENERATED DEFINES
-define( 'GUTENBERG_VERSION', '3.4.0' );
-define( 'GUTENBERG_GIT_COMMIT', 'b38844f187d0c9d864ddbabbd372e0b55d2e856c' );
+define( 'GUTENBERG_VERSION', '3.5.0' );
+define( 'GUTENBERG_GIT_COMMIT', 'b66cc665f30aa670a249f2386b27b5aeed659ba0' );
 ### END AUTO-GENERATED DEFINES
 
 gutenberg_pre_init();
@@ -122,7 +122,7 @@ function is_gutenberg_page() {
  */
 function gutenberg_wordpress_version_notice() {
 	echo '<div class="error"><p>';
-	echo __( 'Gutenberg requires WordPress 4.9.6 or later to function properly. Please upgrade WordPress before activating Gutenberg.', 'gutenberg' );
+	echo __( 'Gutenberg requires WordPress 4.9.8 or later to function properly. Please upgrade WordPress before activating Gutenberg.', 'gutenberg' );
 	echo '</p></div>';
 
 	deactivate_plugins( array( 'gutenberg/gutenberg.php' ) );
@@ -156,7 +156,7 @@ function gutenberg_pre_init() {
 	// Strip '-src' from the version string. Messes up version_compare().
 	$version = str_replace( '-src', '', $wp_version );
 
-	if ( version_compare( $version, '4.9.6', '<' ) ) {
+	if ( version_compare( $version, '4.9.8', '<' ) ) {
 		add_action( 'admin_notices', 'gutenberg_wordpress_version_notice' );
 		return;
 	}
@@ -383,7 +383,7 @@ function gutenberg_replace_default_add_new_button() {
 			newbutton += '<a href="' + classicUrl + '"><?php echo esc_js( __( 'Classic Editor', 'gutenberg' ) ); ?></a></span></span><span class="page-title-action" style="display:none;"></span>';
 
 			button.insertAdjacentHTML( 'afterend', newbutton );
-			button.remove();
+			button.parentNode.removeChild( button );
 
 			var expander = document.getElementById( 'split-page-title-action' ).getElementsByClassName( 'expander' ).item( 0 );
 			var dropdown = expander.parentNode.querySelector( '.dropdown' );

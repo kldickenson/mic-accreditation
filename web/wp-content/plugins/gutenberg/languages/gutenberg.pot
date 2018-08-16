@@ -4,7 +4,7 @@ msgstr ""
 "X-Generator: babel-plugin-makepot\n"
 
 #: components/code-editor/index.js:88
-#: packages/api-fetch/build-module/index.js:82
+#: packages/api-fetch/build-module/index.js:123
 msgid "An unknown error occurred."
 msgstr ""
 
@@ -65,9 +65,9 @@ msgid "None"
 msgstr ""
 
 #: core-blocks/audio/edit.js:141
-#: core-blocks/embed/index.js:262
+#: core-blocks/embed/index.js:254
 #: core-blocks/gallery/gallery-image.js:129
-#: core-blocks/image/edit.js:473
+#: core-blocks/image/edit.js:478
 #: core-blocks/video/edit.js:163
 msgid "Write caption…"
 msgstr ""
@@ -117,27 +117,27 @@ msgstr ""
 msgid "Reusable Block: %s"
 msgstr ""
 
-#: core-blocks/button/edit.js:107
-#: core-blocks/paragraph/index.js:185
+#: core-blocks/button/edit.js:106
+#: core-blocks/paragraph/edit.js:179
 msgid "Color Settings"
 msgstr ""
 
-#: core-blocks/button/edit.js:112
-#: core-blocks/paragraph/index.js:191
+#: core-blocks/button/edit.js:111
+#: core-blocks/paragraph/edit.js:185
 msgid "Background Color"
 msgstr ""
 
-#: core-blocks/button/edit.js:117
-#: core-blocks/paragraph/index.js:196
+#: core-blocks/button/edit.js:116
+#: core-blocks/paragraph/edit.js:190
 msgid "Text Color"
 msgstr ""
 
-#: core-blocks/button/edit.js:142
+#: core-blocks/button/edit.js:141
 #: packages/editor/build-module/components/rich-text/format-toolbar/index.js:298
 msgid "Apply"
 msgstr ""
 
-#: core-blocks/button/edit.js:87
+#: core-blocks/button/edit.js:86
 #: core-blocks/file/edit.js:212
 msgid "Add text…"
 msgstr ""
@@ -186,7 +186,7 @@ msgid "Categories"
 msgstr ""
 
 #: core-blocks/categories/edit.js:70
-#: core-blocks/latest-posts/edit.js:147
+#: core-blocks/latest-posts/edit.js:145
 #: packages/editor/build-module/store/selectors.js:422
 msgid "(Untitled)"
 msgstr ""
@@ -218,7 +218,7 @@ msgstr ""
 
 #: core-blocks/columns/index.js:143
 #: core-blocks/gallery/edit.js:218
-#: core-blocks/latest-posts/edit.js:77
+#: core-blocks/latest-posts/edit.js:75
 #: core-blocks/text-columns/index.js:90
 msgid "Columns"
 msgstr ""
@@ -272,82 +272,82 @@ msgstr ""
 msgid "Add a full-width image, and layer text over it — great for headers."
 msgstr ""
 
-#: core-blocks/embed/index.js:188
+#: core-blocks/embed/index.js:180
 msgid "Edit URL"
 msgstr ""
 
-#: core-blocks/embed/index.js:200
+#: core-blocks/embed/index.js:192
 msgid "Embedding…"
 msgstr ""
 
 # %s: type of embed e.g: "YouTube", "Twitter", etc. "Embed" is used when no specific type exists
-#: core-blocks/embed/index.js:207
+#: core-blocks/embed/index.js:199
 msgid "%s URL"
 msgstr ""
 
-#: core-blocks/embed/index.js:217
+#: core-blocks/embed/index.js:209
 msgid "Enter URL to embed here…"
 msgstr ""
 
-#: core-blocks/embed/index.js:224
+#: core-blocks/embed/index.js:216
 msgid "Sorry, we could not embed that content."
 msgstr ""
 
 # %s: host providing embed content e.g: www.youtube.com
-#: core-blocks/embed/index.js:233
+#: core-blocks/embed/index.js:226
 msgid "Embedded content from %s"
 msgstr ""
 
-#: core-blocks/embed/index.js:254
+#: core-blocks/embed/index.js:246
 msgid "Embed URL"
 msgstr ""
 
-#: core-blocks/embed/index.js:256
+#: core-blocks/embed/index.js:248
 msgid "Previews for this are unavailable in the editor, sorry!"
 msgstr ""
 
-#: core-blocks/embed/index.js:299
-msgid "Embed"
-msgstr ""
-
-#: core-blocks/embed/index.js:300
-msgid ""
-"The Embed block allows you to easily add videos, images, tweets, audio, and "
-"other content to your post or page."
-msgstr ""
-
-#: core-blocks/embed/index.js:323
-msgid "tweet"
-msgstr ""
-
-#: core-blocks/embed/index.js:358
-msgid "post"
-msgstr ""
-
-#: core-blocks/embed/index.js:358
-msgid "blog"
-msgstr ""
-
-#: core-blocks/embed/index.js:384
-msgid "image"
-msgstr ""
-
-#: core-blocks/embed/index.js:485
-msgid "music"
-msgstr ""
-
-#: core-blocks/embed/index.js:485
-msgid "audio"
-msgstr ""
-
 # %s: Name of service (e.g. VideoPress, YouTube)
-#: core-blocks/embed/index.js:49
+#: core-blocks/embed/index.js:268
 msgid ""
 "Add a block that displays content pulled from other sites, like Twitter, "
 "Instagram or YouTube."
 msgstr ""
 
-#: core-blocks/embed/index.js:582
+#: core-blocks/embed/index.js:340
+msgid "Embed"
+msgstr ""
+
+#: core-blocks/embed/index.js:341
+msgid ""
+"The Embed block allows you to easily add videos, images, tweets, audio, and "
+"other content to your post or page."
+msgstr ""
+
+#: core-blocks/embed/index.js:364
+msgid "tweet"
+msgstr ""
+
+#: core-blocks/embed/index.js:399
+msgid "post"
+msgstr ""
+
+#: core-blocks/embed/index.js:399
+msgid "blog"
+msgstr ""
+
+#: core-blocks/embed/index.js:425
+msgid "image"
+msgstr ""
+
+#: core-blocks/embed/index.js:526
+msgid "music"
+msgstr ""
+
+#: core-blocks/embed/index.js:526
+msgid "audio"
+msgstr ""
+
+#: core-blocks/embed/index.js:623
 msgid "video"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgid "The download button is hidden."
 msgstr ""
 
 #: core-blocks/file/inspector.js:27
-#: packages/editor/build-module/components/url-input/index.js:239
+#: packages/editor/build-module/components/url-input/index.js:238
 msgid "URL"
 msgstr ""
 
@@ -424,11 +424,13 @@ msgid "Text Link Settings"
 msgstr ""
 
 #: core-blocks/file/inspector.js:40
-#: core-blocks/image/edit.js:347
+#: core-blocks/gallery/edit.js:231
+#: core-blocks/image/edit.js:349
 msgid "Link To"
 msgstr ""
 
 #: core-blocks/file/inspector.js:46
+#: packages/editor/build-module/components/rich-text/format-toolbar/index.js:265
 msgid "Open in New Window"
 msgstr ""
 
@@ -438,12 +440,6 @@ msgstr ""
 
 #: core-blocks/file/inspector.js:53
 msgid "Show Download Button"
-msgstr ""
-
-#: core-blocks/freeform/edit.js:117
-#: core-blocks/more/index.js:21
-#: edit-post/components/header/more-menu/index.js:23
-msgid "More"
 msgstr ""
 
 #: core-blocks/freeform/edit.js:168
@@ -486,10 +482,6 @@ msgstr ""
 
 #: core-blocks/gallery/edit.js:225
 msgid "Crop Images"
-msgstr ""
-
-#: core-blocks/gallery/edit.js:231
-msgid "Link to"
 msgstr ""
 
 #: core-blocks/gallery/edit.js:265
@@ -577,7 +569,7 @@ msgid "Image Settings"
 msgstr ""
 
 #: core-blocks/image/edit.js:275
-msgid "Textual Alternative"
+msgid "Alt Text (Alternative Text)"
 msgstr ""
 
 #: core-blocks/image/edit.js:278
@@ -586,34 +578,34 @@ msgid ""
 "part of the content."
 msgstr ""
 
-#: core-blocks/image/edit.js:293
+#: core-blocks/image/edit.js:294
 msgid "Image Dimensions"
 msgstr ""
 
-#: core-blocks/image/edit.js:299
+#: core-blocks/image/edit.js:300
 msgid "Width"
 msgstr ""
 
-#: core-blocks/image/edit.js:308
+#: core-blocks/image/edit.js:309
 msgid "Height"
 msgstr ""
 
-#: core-blocks/image/edit.js:316
+#: core-blocks/image/edit.js:317
 msgid "Image Size"
 msgstr ""
 
-#: core-blocks/image/edit.js:340
+#: core-blocks/image/edit.js:341
 #: packages/components/src/font-size-picker/index.js:40
 #: packages/components/src/range-control/index.js:62
 msgid "Reset"
 msgstr ""
 
-#: core-blocks/image/edit.js:345
+#: core-blocks/image/edit.js:347
 #: packages/editor/build-module/components/rich-text/format-toolbar/index.js:326
 msgid "Link Settings"
 msgstr ""
 
-#: core-blocks/image/edit.js:353
+#: core-blocks/image/edit.js:355
 msgid "Link URL"
 msgstr ""
 
@@ -657,28 +649,28 @@ msgstr ""
 msgid "recent comments"
 msgstr ""
 
-#: core-blocks/latest-posts/edit.js:114
+#: core-blocks/latest-posts/edit.js:112
 msgid "List View"
 msgstr ""
 
-#: core-blocks/latest-posts/edit.js:120
+#: core-blocks/latest-posts/edit.js:118
 msgid "Grid View"
 msgstr ""
 
-#: core-blocks/latest-posts/edit.js:59
+#: core-blocks/latest-posts/edit.js:57
 msgid "Latest Posts Settings"
 msgstr ""
 
-#: core-blocks/latest-posts/edit.js:71
+#: core-blocks/latest-posts/edit.js:69
 msgid "Display post date"
 msgstr ""
 
-#: core-blocks/latest-posts/edit.js:95
+#: core-blocks/latest-posts/edit.js:93
 #: core-blocks/latest-posts/index.js:15
 msgid "Latest Posts"
 msgstr ""
 
-#: core-blocks/latest-posts/edit.js:99
+#: core-blocks/latest-posts/edit.js:97
 msgid "No posts found."
 msgstr ""
 
@@ -762,36 +754,36 @@ msgstr ""
 msgid "Page break"
 msgstr ""
 
-#: core-blocks/paragraph/index.js:171
+#: core-blocks/paragraph/edit.js:165
 msgid "Text Settings"
 msgstr ""
 
-#: core-blocks/paragraph/index.js:178
+#: core-blocks/paragraph/edit.js:172
 msgid "Drop Cap"
 msgstr ""
 
-#: core-blocks/paragraph/index.js:236
+#: core-blocks/paragraph/edit.js:230
 msgid "Add text or type / to add content"
 msgstr ""
 
-#: core-blocks/paragraph/index.js:287
-msgid "Paragraph"
-msgstr ""
-
-#: core-blocks/paragraph/index.js:289
-msgid "Add some basic text."
-msgstr ""
-
-#: core-blocks/paragraph/index.js:295
-msgid "text"
-msgstr ""
-
-#: core-blocks/paragraph/index.js:89
+#: core-blocks/paragraph/edit.js:83
 msgid "Showing large initial letter."
 msgstr ""
 
-#: core-blocks/paragraph/index.js:89
+#: core-blocks/paragraph/edit.js:83
 msgid "Toggle to show a large initial letter."
+msgstr ""
+
+#: core-blocks/paragraph/index.js:74
+msgid "Paragraph"
+msgstr ""
+
+#: core-blocks/paragraph/index.js:76
+msgid "Add some basic text."
+msgstr ""
+
+#: core-blocks/paragraph/index.js:82
+msgid "text"
 msgstr ""
 
 #: core-blocks/preformatted/index.js:17
@@ -1157,7 +1149,7 @@ msgstr[1] ""
 
 #: edit-post/components/sidebar/sidebar-header/index.js:25
 #: packages/editor/build-module/components/post-publish-panel/postpublish.js:89
-#: packages/editor/build-module/components/url-input/index.js:274
+#: packages/editor/build-module/components/url-input/index.js:273
 msgid "(no title)"
 msgstr ""
 
@@ -1213,7 +1205,7 @@ msgstr ""
 msgid "Code editor selected"
 msgstr ""
 
-#: packages/api-fetch/build-module/index.js:70
+#: packages/api-fetch/build-module/index.js:81
 msgid "The response is not a valid JSON response."
 msgstr ""
 
@@ -1242,16 +1234,16 @@ msgid "Reusable Blocks"
 msgstr ""
 
 #: packages/components/src/autocomplete/index.js:337
-#: packages/components/src/form-token-field/index.js:212
-#: packages/editor/build-module/components/url-input/index.js:140
+#: packages/components/src/form-token-field/index.js:219
+#: packages/editor/build-module/components/url-input/index.js:139
 msgid "%d result found, use up and down arrow keys to navigate."
 msgid_plural "%d results found, use up and down arrow keys to navigate."
 msgstr[0] ""
 msgstr[1] ""
 
 #: packages/components/src/autocomplete/index.js:343
-#: packages/components/src/form-token-field/index.js:218
-#: packages/editor/build-module/components/url-input/index.js:142
+#: packages/components/src/form-token-field/index.js:225
+#: packages/editor/build-module/components/url-input/index.js:141
 msgid "No results."
 msgstr ""
 
@@ -1298,23 +1290,23 @@ msgstr ""
 msgid "Custom Size"
 msgstr ""
 
-#: packages/components/src/form-token-field/index.js:509
+#: packages/components/src/form-token-field/index.js:534
 msgid "Add item."
 msgstr ""
 
-#: packages/components/src/form-token-field/index.js:565
+#: packages/components/src/form-token-field/index.js:589
 msgid "Separate with commas"
 msgstr ""
 
-#: packages/components/src/form-token-field/index.js:586
+#: packages/components/src/form-token-field/index.js:610
 msgid "Item added."
 msgstr ""
 
-#: packages/components/src/form-token-field/index.js:587
+#: packages/components/src/form-token-field/index.js:611
 msgid "Item removed."
 msgstr ""
 
-#: packages/components/src/form-token-field/index.js:588
+#: packages/components/src/form-token-field/index.js:612
 msgid "Remove item"
 msgstr ""
 
@@ -1372,11 +1364,11 @@ msgid "Number of items"
 msgstr ""
 
 # %s: error message describing the problem
-#: packages/components/src/server-side-render/index.js:83
+#: packages/components/src/server-side-render/index.js:85
 msgid "Error loading block: %s"
 msgstr ""
 
-#: packages/components/src/server-side-render/index.js:89
+#: packages/components/src/server-side-render/index.js:91
 msgid "No results found."
 msgstr ""
 
@@ -1444,11 +1436,11 @@ msgstr ""
 msgid "Insert block"
 msgstr ""
 
-#: packages/editor/build-module/components/block-mover/index.js:107
+#: packages/editor/build-module/components/block-mover/index.js:106
 msgid "Move down"
 msgstr ""
 
-#: packages/editor/build-module/components/block-mover/index.js:98
+#: packages/editor/build-module/components/block-mover/index.js:97
 msgid "Move up"
 msgstr ""
 
@@ -1511,11 +1503,11 @@ msgstr ""
 msgid "Remove Block"
 msgstr ""
 
-#: packages/editor/build-module/components/block-settings-menu/index.js:96
+#: packages/editor/build-module/components/block-settings-menu/index.js:95
 msgid "Hide Options"
 msgstr ""
 
-#: packages/editor/build-module/components/block-settings-menu/index.js:96
+#: packages/editor/build-module/components/block-settings-menu/index.js:95
 msgid "More Options"
 msgstr ""
 
@@ -1572,17 +1564,17 @@ msgid ""
 "background color and/or a darker text color."
 msgstr ""
 
-#: packages/editor/build-module/components/default-block-appender/index.js:40
+#: packages/editor/build-module/components/default-block-appender/index.js:39
 #: packages/editor/build-module/components/post-text-editor/index.js:110
 msgid "Write your story"
 msgstr ""
 
-#: packages/editor/build-module/components/default-block-appender/index.js:52
+#: packages/editor/build-module/components/default-block-appender/index.js:51
 #: packages/editor/build-module/components/inserter/index.js:78
 msgid "Add block"
 msgstr ""
 
-#: packages/editor/build-module/components/default-block-appender/index.js:67
+#: packages/editor/build-module/components/default-block-appender/index.js:66
 msgid ""
 "Welcome to the wonderful world of blocks! Click the “+” (“Add block”) "
 "button to add a new block. There are blocks available for all kind of "
@@ -1645,7 +1637,7 @@ msgstr ""
 msgid "Available block types"
 msgstr ""
 
-#: packages/editor/build-module/components/inserter/menu.js:274
+#: packages/editor/build-module/components/inserter/menu.js:270
 msgid "Most Used"
 msgstr ""
 
@@ -1657,23 +1649,23 @@ msgstr ""
 msgid "No blocks found."
 msgstr ""
 
-#: packages/editor/build-module/components/media-placeholder/index.js:150
+#: packages/editor/build-module/components/media-placeholder/index.js:131
 msgid "Drag %s, upload a new one or select a file from your library."
 msgstr ""
 
-#: packages/editor/build-module/components/media-placeholder/index.js:162
+#: packages/editor/build-module/components/media-placeholder/index.js:143
 msgid "Enter URL here…"
 msgstr ""
 
-#: packages/editor/build-module/components/media-placeholder/index.js:168
+#: packages/editor/build-module/components/media-placeholder/index.js:149
 msgid "Use URL"
 msgstr ""
 
-#: packages/editor/build-module/components/media-placeholder/index.js:174
+#: packages/editor/build-module/components/media-placeholder/index.js:155
 msgid "Upload"
 msgstr ""
 
-#: packages/editor/build-module/components/media-placeholder/index.js:185
+#: packages/editor/build-module/components/media-placeholder/index.js:166
 msgid "Media Library"
 msgstr ""
 
@@ -1681,11 +1673,11 @@ msgstr ""
 msgid "Order"
 msgstr ""
 
-#: packages/editor/build-module/components/page-attributes/parent.js:38
+#: packages/editor/build-module/components/page-attributes/parent.js:37
 msgid "no title"
 msgstr ""
 
-#: packages/editor/build-module/components/page-attributes/parent.js:43
+#: packages/editor/build-module/components/page-attributes/parent.js:42
 msgid "no parent"
 msgstr ""
 
@@ -1701,7 +1693,7 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: packages/editor/build-module/components/post-comments/index.js:28
+#: packages/editor/build-module/components/post-comments/index.js:24
 msgid "Allow Comments"
 msgstr ""
 
@@ -1764,7 +1756,7 @@ msgid_plural "%d Revisions"
 msgstr[0] ""
 msgstr[1] ""
 
-#: packages/editor/build-module/components/post-pending-status/index.js:28
+#: packages/editor/build-module/components/post-pending-status/index.js:25
 msgid "Pending Review"
 msgstr ""
 
@@ -1792,11 +1784,11 @@ msgstr ""
 msgid "Copy the permalink"
 msgstr ""
 
-#: packages/editor/build-module/components/post-pingbacks/index.js:28
+#: packages/editor/build-module/components/post-pingbacks/index.js:24
 msgid "Allow Pingbacks & Trackbacks"
 msgstr ""
 
-#: packages/editor/build-module/components/post-preview-button/index.js:124
+#: packages/editor/build-module/components/post-preview-button/index.js:122
 msgid ""
 "Click ‘Preview’ to load a preview of this page, so you can make sure you’re "
 "happy with your blocks."
@@ -1867,9 +1859,7 @@ msgid "Are you ready to submit for review?"
 msgstr ""
 
 #: packages/editor/build-module/components/post-publish-panel/prepublish.js:29
-msgid ""
-"Here, you can do a last-minute check up of your settings below, before you "
-"publish."
+msgid "Double-check your settings, then use the button to publish your post."
 msgstr ""
 
 #: packages/editor/build-module/components/post-publish-panel/prepublish.js:29
@@ -1900,19 +1890,19 @@ msgid ""
 "click ‘Publish’ and you’re good to go."
 msgstr ""
 
-#: packages/editor/build-module/components/post-saved-state/index.js:106
+#: packages/editor/build-module/components/post-saved-state/index.js:107
 msgid "Saved"
 msgstr ""
 
-#: packages/editor/build-module/components/post-saved-state/index.js:114
+#: packages/editor/build-module/components/post-saved-state/index.js:115
 msgid "Save Draft"
 msgstr ""
 
-#: packages/editor/build-module/components/post-saved-state/index.js:90
+#: packages/editor/build-module/components/post-saved-state/index.js:91
 msgid "Autosaving"
 msgstr ""
 
-#: packages/editor/build-module/components/post-saved-state/index.js:90
+#: packages/editor/build-module/components/post-saved-state/index.js:91
 msgid "Saving"
 msgstr ""
 
@@ -1920,15 +1910,19 @@ msgstr ""
 msgid "Immediately"
 msgstr ""
 
-#: packages/editor/build-module/components/post-sticky/index.js:23
+#: packages/editor/build-module/components/post-sticky/index.js:20
 msgid "Stick to the Front Page"
 msgstr ""
 
-#: packages/editor/build-module/components/post-switch-to-draft-button/index.js:22
+#: packages/editor/build-module/components/post-switch-to-draft-button/index.js:25
 msgid "Are you sure you want to unpublish this post?"
 msgstr ""
 
-#: packages/editor/build-module/components/post-switch-to-draft-button/index.js:32
+#: packages/editor/build-module/components/post-switch-to-draft-button/index.js:27
+msgid "Are you sure you want to unschedule this post?"
+msgstr ""
+
+#: packages/editor/build-module/components/post-switch-to-draft-button/index.js:41
 msgid "Switch to Draft"
 msgstr ""
 
@@ -2027,10 +2021,6 @@ msgstr ""
 msgid "Unlink"
 msgstr ""
 
-#: packages/editor/build-module/components/rich-text/format-toolbar/index.js:265
-msgid "Open in new window"
-msgstr ""
-
 #: packages/editor/build-module/components/rich-text/format-toolbar/index.js:29
 msgid "Bold"
 msgstr ""
@@ -2039,7 +2029,7 @@ msgstr ""
 msgid "Italic"
 msgstr ""
 
-#: packages/editor/build-module/components/rich-text/format-toolbar/index.js:39
+#: packages/editor/build-module/components/rich-text/format-toolbar/index.js:44
 msgid "Strikethrough"
 msgstr ""
 
@@ -2119,7 +2109,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: packages/editor/build-module/components/url-input/index.js:244
+#: packages/editor/build-module/components/url-input/index.js:243
 msgid "Paste URL or type"
 msgstr ""
 
@@ -2211,53 +2201,61 @@ msgstr ""
 msgid "XL"
 msgstr ""
 
-#: packages/editor/build-module/store/effects.js:123
+#: packages/editor/build-module/store/effects.js:105
 msgid ""
 "There is an autosave of this post that is more recent than the version "
 "below."
 msgstr ""
 
-#: packages/editor/build-module/store/effects.js:127
+#: packages/editor/build-module/store/effects.js:109
 msgid "View the autosave"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:232
+#: packages/editor/build-module/store/effects/posts.js:233
 msgid "Post reverted to draft."
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:238
+#: packages/editor/build-module/store/effects/posts.js:239
 msgid "Post published!"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:239
+#: packages/editor/build-module/store/effects/posts.js:240
 msgid "Post published privately!"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:240
+#: packages/editor/build-module/store/effects/posts.js:241
 msgid "Post scheduled!"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:244
+#: packages/editor/build-module/store/effects/posts.js:245
 msgid "Post updated!"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:250
+#: packages/editor/build-module/store/effects/posts.js:251
 msgid "View post"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:281
+#: packages/editor/build-module/store/effects/posts.js:282
 msgid "Publishing failed"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:282
+#: packages/editor/build-module/store/effects/posts.js:283
 msgid "Scheduling failed"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:284
+#: packages/editor/build-module/store/effects/posts.js:285
 msgid "Updating failed"
 msgstr ""
 
-#: packages/editor/build-module/store/effects/posts.js:361
+#: packages/editor/build-module/store/effects/posts.js:292
+msgid "Cloudflare is blocking REST API requests."
+msgstr ""
+
+#: packages/editor/build-module/store/effects/posts.js:294
+msgid "Learn More"
+msgstr ""
+
+#: packages/editor/build-module/store/effects/posts.js:371
 msgid "Trashing failed"
 msgstr ""
 
@@ -2298,23 +2296,34 @@ msgstr ""
 msgid "Error while uploading file %s to the media library."
 msgstr ""
 
-#: packages/nux/build-module/components/dot-tip/index.js:27
+#: packages/nux/build-module/components/dot-tip/index.js:57
 msgid "Gutenberg tips"
 msgstr ""
 
-#: packages/nux/build-module/components/dot-tip/index.js:34
+#: packages/nux/build-module/components/dot-tip/index.js:66
 msgid "See next tip"
 msgstr ""
 
-#: packages/nux/build-module/components/dot-tip/index.js:34
+#: packages/nux/build-module/components/dot-tip/index.js:66
 msgid "Got it"
 msgstr ""
 
-#: packages/nux/build-module/components/dot-tip/index.js:37
+#: packages/nux/build-module/components/dot-tip/index.js:69
 msgid "Disable tips"
 msgstr ""
 
-#: packages/editor/build-module/components/post-preview-button/index.js:122
+#: core-blocks/freeform/edit.js:117
+#: edit-post/components/header/more-menu/index.js:23
+msgctxt "button to expand options"
+msgid "More"
+msgstr ""
+
+#: core-blocks/more/index.js:21
+msgctxt "block name"
+msgid "More"
+msgstr ""
+
+#: packages/editor/build-module/components/post-preview-button/index.js:120
 msgctxt "imperative verb"
 msgid "Preview"
 msgstr ""
