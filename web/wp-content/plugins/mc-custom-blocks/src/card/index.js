@@ -13,7 +13,6 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 
 const {
 	IconButton,
-	Dashicon,
 	Button,
 	Toolbar,
 } = wp.components;
@@ -29,7 +28,6 @@ const {
 const {
 	BlockControls,
 	RichText,
-	URLInput,
 	MediaUpload,
 } = wp.editor;
 
@@ -43,7 +41,6 @@ export const edit = ( props ) => {
 
 	const {
 		url,
-		cardURL,
 		heading,
 		id,
 		des,
@@ -133,41 +130,17 @@ export const edit = ( props ) => {
 				onFocus={ onSetActiveEditable( 'des' ) }
 			/>
 		</div>,
-		isSelected && (
-			<form
-				key={ 'form-link' }
-				className={ 'core-blocks-button__inline-link' }
-				onSubmit={ ( event ) => event.preventDefault() }
-				style={ { marginTop: 10 } }
-			>
-				<Dashicon icon={ 'admin-links' } />
-				<URLInput
-					value={ cardURL }
-					onChange={ ( value ) => setAttributes( { cardURL: value } ) }
-					onFocus={ onSetActiveEditable( 'cardURL' ) }
-				/>
-				<IconButton
-					icon={ 'editor-break' }
-					className={ 'components-button components-icon-button' }
-					label={ __( 'Apply' ) }
-					type={ 'submit' }
-				/>
-			</form>
-		),
 	];
 };
 
 export const save = ( props ) => {
 	const {
-		cardURL,
 		heading,
 		des,
 		url,
 	} = props.attributes;
 
 	return (
-		<div className={ 'cell' } data-equalizer-watch>
-			<a href={ cardURL }>
 				<div className={ 'card' }>
 					<div className={ 'card-divider' }>
 						{ heading && !! heading.length && (
@@ -185,8 +158,7 @@ export const save = ( props ) => {
 						</div>
 					) }
 				</div>
-			</a>
-		</div>
+	
 	);
 };
 /**
@@ -235,12 +207,6 @@ registerBlockType( 'mc-custom-blocks/homepage-card', {
 			type: 'array',
 			source: 'children',
 			selector: 'p',
-		},
-		url: {
-			type: 'string',
-			source: 'attribute',
-			selector: 'img',
-			attribute: 'src',
 		},
 		width1: {
 			type: 'number',
