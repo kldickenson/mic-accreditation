@@ -6,11 +6,11 @@
 		}
 	}
 	a {
-		color: $michigan-maize;
+		border-bottom: 1px solid rgba($taubman-teal, 0) !important;
 		font-weight: 700;
-		transition: color .2s ease;
+		transition: all .2s ease;
 		&:hover {
-			border-bottom: 1px solid $taubman-teal !important;
+			border-bottom: 1px solid rgba($taubman-teal, 1) !important;
 			color: $taubman-teal;
 		}
 		@include breakpoint(small only) {
