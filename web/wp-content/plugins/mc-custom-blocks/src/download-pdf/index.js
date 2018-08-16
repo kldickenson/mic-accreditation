@@ -98,11 +98,11 @@ export const save = ( props ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'ms-toolkit-blocks/download', {
+registerBlockType( 'mc-custom-blocks/download', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'MSToolkit Download PDF Button' ), // Block title.
+	title: __( 'MC Download PDF Button' ), // Block title.
 	icon: 'download', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'Custom', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'Button' ),
 		__( 'Stackable' ),

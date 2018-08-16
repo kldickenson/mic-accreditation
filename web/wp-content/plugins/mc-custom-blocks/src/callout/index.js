@@ -138,13 +138,13 @@ export const save = ( props ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'ms-toolkit-blocks/callout', {
+registerBlockType( 'mc-custom-blocks/callout', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'MSToolkit Callout' ), // Block title.
+	title: __( 'MC Callout' ), // Block title.
 	icon: 'sort', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'Custom', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'MSToolkit Callout' ),
+		__( 'MC Callout' ),
 	],
 	attributes: {
 		calloutURL: {
