@@ -48,15 +48,7 @@
 }
 
 .site-mobile-title {
-  font-size: 1.2rem;
-  color: $white;
-  a {
-    color: $michigan-maize;
-    font-size: 2rem;
-    &:hover , &:focus {
-      text-decoration: underline;
-    }
-  }
+  max-width: 80%;
 }
 
 .mobile-menu,
@@ -118,7 +110,8 @@ body .site-header .top-bar {
       }
     }
 
-    .menu .is-active {
+    .menu .is-active,
+    .menu .current-page-ancestor {
       position: relative;
 
       &:after {
