@@ -75,6 +75,7 @@
 		<!-- /mobile only -->
 
 		<div class="site-navigation top-bar">
+			<a class="skip-link" href="#mainContent">Skip to Content</a>
 			<div class="grid-container">
 				<div class="logo-search grid-x grid-margin-x medium-margin-collapse align-justify">
 					<div class="logo cell small-12 medium-4 hide-for-small-only">
