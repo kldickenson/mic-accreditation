@@ -103,10 +103,18 @@ export const save = ( props ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
+const accordionBlockIcon = (
+	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="2 2 22 22">
+		<path style="fill:#00274C;" d="M1.6,4v16c0,1.1,0.9,2,2,2h22c1.1,0,2-0.9,2-2V4c0-1.1-0.9-2-2-2h-22C2.5,2,1.6,2.9,1.6,4z M25.6,7.8 V20h-22V7.8H25.6z"/>
+		<path style="fill:#00274C;" d="M1.6,26v2c0,1.1,0.9,2,2,2h22c1.1,0,2-0.9,2-2v-2c0-1.1-0.9-2-2-2h-22C2.5,24,1.6,24.9,1.6,26z"/>
+		<path style="fill:none;stroke:#FFCB05;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;" d="M4.1,27h2 M5.1,28v-2"/>
+		<line style="fill:none;stroke:#FFCB05;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;" x1="4.6" y1="5" x2="6.6" y2="5"/>
+	</svg>
+);
 registerBlockType( 'mc-custom-blocks/accordion', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'MC Accordion' ), // Block title.
-	icon: 'plus', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: accordionBlockIcon, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'Custom', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'MC Accordion' ),

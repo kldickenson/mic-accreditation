@@ -29,7 +29,6 @@ export const edit = ( props ) => {
 		isSelected,
 		editable,
 		setState,
-		className,
 		setAttributes,
 	} = props;
 
@@ -138,10 +137,18 @@ export const save = ( props ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
+const calloutBlockIcon = (
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+		<path style="fill:none;stroke:#00274C;" d="M10.3,3.9L1.8,18c-0.6,1-0.2,2.2,0.7,2.7c0.3,0.2,0.6,0.3,1,0.3h16.9c1.1,0,2-0.9,2-2 c0-0.3-0.1-0.7-0.3-1L13.7,3.9c-0.6-0.9-1.8-1.2-2.7-0.7C10.7,3.4,10.5,3.6,10.3,3.9z"/>
+		<line style="fill:none;stroke:#00274C;stroke-linecap:round;" x1="12" y1="9.4" x2="12" y2="15.4"/>
+		<line style="fill:none;stroke:#666371;" x1="12" y1="17" x2="12" y2="17"/>
+		<line style="fill:none;stroke:#00274C;stroke-linecap:round;" x1="12" y1="17.3" x2="12" y2="17.3"/>
+	</svg>
+);
 registerBlockType( 'mc-custom-blocks/callout', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'MC Callout' ), // Block title.
-	icon: 'sort', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: calloutBlockIcon, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'Custom', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'MC Callout' ),

@@ -14,16 +14,24 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 const {
 	IconButton,
 	Dashicon,
-	withState,
-	SelectControl,
+	Button,
+	Toolbar,
 } = wp.components;
 
 const {
+	withState,
+} = wp.compose;
+
+const {
 	registerBlockType, // Import registerBlockType() from wp.blocks
-	InspectorControls,
-	RichText,
-	UrlInput,
 } = wp.blocks;
+
+const {
+	BlockControls,
+	RichText,
+	URLInput,
+	MediaUpload,
+} = wp.editor;
 
 export const edit = ( props ) => {
 	const {
@@ -34,86 +42,93 @@ export const edit = ( props ) => {
 	} = props;
 
 	const {
+		url,
 		cardURL,
 		heading,
+		id,
 		des,
-		cardID,
-		iconID,
+		height1,
+		width2,
+		verticalAlign,
+		horizontalAlign,
+		full,
 	} = props.attributes;
+
+	const imageClass = url ? 'has-image' : '';
+
+	const fullWidth = full ? 'full-width' : '';
 
 	const onSetActiveEditable = ( newEditable ) => () => {
 		setState( { editable: newEditable } );
 	};
 
-	const cardIDOptions = [
-		{ value: ' ', label: __( 'Please select one' ) },
-		{ value: 'compass-card', label: __( 'Getting Started card' ) },
-		{ value: 'target-card', label: __( 'Goal Setting card' ) },
-		{ value: 'sun-card', label: __( 'Relaxation card' ) },
-		{ value: 'battery-card', label: __( 'Energy Management card' ) },
-		{ value: 'thoughts-card', label: __( 'Working with Thoughts card' ) },
-		{ value: 'human-card', label: __( 'Managing Emotions card' ) },
-		{ value: 'moon-card', label: __( 'Sleep card' ) },
-		{ value: 'chatty-chat-card', label: __( 'Communication card' ) },
-		{ value: 'heart-card', label: __( 'Being Active card' ) },
-	];
-
-	const iconIDOptions = [
-		{ value: ' ', label: __( 'Please select an icon' ) },
-		{ value: 'compass', label: __( 'Getting Started icon' ) },
-		{ value: 'target', label: __( 'Goal Setting icon' ) },
-		{ value: 'sun', label: __( 'Relaxation icon' ) },
-		{ value: 'battery', label: __( 'Energy Management icon' ) },
-		{ value: 'thought', label: __( 'Working with Thoughts icon' ) },
-		{ value: 'human', label: __( 'Managing Emotions icon' ) },
-		{ value: 'moon', label: __( 'Sleep icon' ) },
-		{ value: 'chatty-chat', label: __( 'Communication icon' ) },
-		{ value: 'heart', label: __( 'Being Active icon' ) },
-	];
 	return [
-
-		<InspectorControls key={ 'inspector' }>
-			<SelectControl
-				label={ __( 'Card ID' ) }
-				value={ cardID }
-				options={ cardIDOptions.map( ( { value, label } ) => ( {
-					value: value,
-					label: label,
-				} ) ) }
-				onChange={ ( newCardID ) => {
-					setAttributes( { cardID: newCardID } );
+		isSelected && (
+			<BlockControls key={ 'controls' }>
+				{ url && (
+					<Toolbar>
+						<MediaUpload
+							onSelect={ ( media ) => setAttributes( { url: media.url, id: media.id } ) }
+							type="image"
+							value={ id }
+							render={ ( { open } ) => (
+								<IconButton
+									className="components-toolbar__control"
+									label={ __( 'Edit image' ) }
+									icon="edit"
+									onClick={ open }
+								/>
+							) }
+						/>
+					</Toolbar>
+				) }
+			</BlockControls>
+		),
+		<div key={ 'editable' } className={ 'card' }>
+			<div key={ 'editable' }
+				className={ `image-box ${ imageClass } ${ fullWidth }` }
+				data-url={ url }
+				style={ {
+					width: width2 + 'px',
+					height: height1 + 'px',
+					backgroundImage: `url(${ url })`,
+					alignItems: horizontalAlign,
+					justifyContent: verticalAlign,
+				} }
+			>
+			</div>
+			<MediaUpload
+				onSelect={ ( media ) => setAttributes( { url: media.url, id: media.id } ) }
+				type={ 'image' }
+				value={ id }
+				render={ function( obj ) {
+					return [
+						! url && (
+							<Button
+								className={ id ? '' : 'button button-large' }
+								onClick={ obj.open }
+							>
+								{ __( 'Upload Image' ) }
+							</Button>
+						),
+					];
 				} }
 			/>
-			<SelectControl
-				label={ __( 'Icon Image' ) }
-				value={ iconID }
-				options={ iconIDOptions.map( ( { value, label } ) => ( {
-					value: value,
-					label: label,
-				} ) ) }
-				onChange={ ( newIconID ) => {
-					setAttributes( { iconID: newIconID } );
-				} }
-			/>
-		</InspectorControls>,
-		<div key={ 'editable' } className={ 'accredit-card' }>
 			<RichText
 				tagName={ 'h5' }
 				value={ heading }
-				className={ 'accredit-card-heading' }
-				onChange={ ( text ) => setAttributes( { heading: text } ) }
+				className={ 'card-heading' }
+				onChange={ ( value ) => setAttributes( { heading: value } ) }
 				isSelected={ isSelected && editable === 'heading' }
 				onFocus={ onSetActiveEditable( 'heading' ) }
-				keepPlaceholderOnFocus
 			/>
 			<RichText
 				tagName={ 'p' }
 				value={ des }
-				className={ 'accredit-card-des' }
-				onChange={ ( text ) => setAttributes( { des: text } ) }
+				className={ 'card-des' }
+				onChange={ ( value ) => setAttributes( { des: value } ) }
 				isSelected={ isSelected && editable === 'des' }
 				onFocus={ onSetActiveEditable( 'des' ) }
-				keepPlaceholderOnFocus
 			/>
 		</div>,
 		isSelected && (
@@ -123,7 +138,7 @@ export const edit = ( props ) => {
 				style={ { marginTop: 10 } }
 			>
 				<Dashicon icon={ 'admin-links' } />
-				<UrlInput
+				<URLInput
 					value={ cardURL }
 					onChange={ ( value ) => setAttributes( { cardURL: value } ) }
 					onFocus={ onSetActiveEditable( 'cardURL' ) }
@@ -143,16 +158,15 @@ export const save = ( props ) => {
 		cardURL,
 		heading,
 		des,
-		cardID,
-		iconID,
+		url,
 	} = props.attributes;
 
 	return (
-		<div className={ 'cell' }>
-			<a href={ cardURL } id={ cardID }>
+		<div className={ 'cell' } data-equalizer-watch>
+			<a href={ cardURL }>
 				<div className={ 'card' }>
 					<div className={ 'card-divider row collapse align-middle' }>
-						<div className={ 'column small-4 medium-2 large-2 xlarge-3' } id={ iconID }></div>
+						<div className={ 'column small-4 medium-2 large-2 xlarge-3' }></div>
 						{ heading && !! heading.length && (
 							<div className={ 'column shrink' }>
 								<h5>
@@ -161,6 +175,7 @@ export const save = ( props ) => {
 							</div>
 						) }
 					</div>
+					<img src={ url } alt="the thing that was uploaded" />
 					{ des && !! des.length && (
 						<div className={ 'card-section' }>
 							<p>
@@ -185,10 +200,19 @@ export const save = ( props ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'mc-custom-blocks/card', {
+const CardIcon = (
+	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="2 2 22 22">
+		<path style="fill:#00274C;" d="M10.7,1.3H3.5c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8V3.1 C12.6,2.1,11.7,1.3,10.7,1.3z M3.5,10.4V3.1h7.3v7.3H3.5z"/>
+		<path style="fill:#00274C;" d="M25.3,1.3H18c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8V3.1 C27.1,2.1,26.3,1.3,25.3,1.3z M18,10.4V3.1h7.3v7.3H18z"/>
+		<path style="fill:#00274C;" d="M10.7,15.8H3.5c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8v-7.3 C12.6,16.6,11.7,15.8,10.7,15.8z M3.5,24.9v-7.3h7.3v7.3H3.5z"/>
+		<path style="fill:#00274C;" d="M25.3,15.8H18c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8v-7.3 C27.1,16.6,26.3,15.8,25.3,15.8z M18,24.9v-7.3h7.3v7.3H18z"/>
+	</svg>
+);
+
+registerBlockType( 'custom-blocks/homepage-card', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'MC Card' ), // Block title.
-	icon: 'grid-view', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: CardIcon, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'Custom', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'MC Card' ),
@@ -204,21 +228,46 @@ registerBlockType( 'mc-custom-blocks/card', {
 			type: 'array',
 			source: 'children',
 			selector: 'h5',
-			default: __( 'Please enter a Card Title' ),
+			default: __( 'Please enter a heading' ),
 		},
 		des: {
 			type: 'array',
 			source: 'children',
 			selector: 'p',
-			default: __( 'Please enter a Card Description' ),
+			default: __( 'Please enter a description' ),
 		},
-		cardID: {
+		url: {
 			type: 'string',
-			default: '',
+			source: 'attribute',
+			selector: '.image-box',
+			attribute: 'data-url',
 		},
-		iconID: {
+		titleColor: {
 			type: 'string',
-			default: null,
+			default: '#ffffff',
+		},
+		id: {
+			type: 'number',
+		},
+		width: {
+			type: 'number',
+			default: '400',
+		},
+		height: {
+			type: 'number',
+			default: '400',
+		},
+		verticalAlign: {
+			type: 'string',
+			default: 'center',
+		},
+		horizontalAlign: {
+			type: 'string',
+			default: 'center',
+		},
+		full: {
+			type: 'boolean',
+			default: false,
 		},
 	},
 

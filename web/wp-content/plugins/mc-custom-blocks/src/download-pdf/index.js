@@ -73,7 +73,6 @@ export const save = ( props ) => {
 	const {
 		mediaURL,
 		text,
-		size
 		} = props.attributes;
 
 	return (
