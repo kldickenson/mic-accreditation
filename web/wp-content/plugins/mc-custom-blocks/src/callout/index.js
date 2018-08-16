@@ -1,5 +1,5 @@
 /**
- * BLOCK: Callout Block.
+ * BLOCK: Text Callout Block.
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -9,20 +9,25 @@
 import './style.scss';
 import './editor.scss';
 
-
 const { __ } = wp.i18n; // Import __() from wp.i18n
 
 const {
 	IconButton,
 	Dashicon,
-	withState,
 } = wp.components;
 
 const {
+	withState,
+} = wp.compose;
+
+const {
 	registerBlockType, // Import registerBlockType() from wp.blocks
-	RichText,
-	UrlInput,
 } = wp.blocks;
+
+const {
+	RichText,
+	URLInput,
+} = wp.editor;
 
 export const edit = ( props ) => {
 	const {
@@ -49,6 +54,7 @@ export const edit = ( props ) => {
 				tagName={ 'h5' }
 				value={ heading }
 				className={ 'accredit-callout-heading' }
+				placeholder={ __( 'Add Heading Text' ) }
 				onChange={ ( text ) => setAttributes( { heading: text } ) }
 				isSelected={ isSelected && editable === 'heading' }
 				onFocus={ onSetActiveEditable( 'heading' ) }
@@ -58,6 +64,7 @@ export const edit = ( props ) => {
 				tagName={ 'p' }
 				value={ des }
 				className={ 'accredit-callout-des' }
+				placeholder={ __( 'Add Content Text' ) }
 				onChange={ ( text ) => setAttributes( { des: text } ) }
 				isSelected={ isSelected && editable === 'des' }
 				onFocus={ onSetActiveEditable( 'des' ) }
@@ -80,7 +87,7 @@ export const edit = ( props ) => {
 				style={ { marginTop: 10 } }
 			>
 				<Dashicon icon={ 'admin-links' } />
-				<UrlInput
+				<URLInput
 					value={ calloutURL }
 					onChange={ ( value ) => setAttributes( { calloutURL: value } ) }
 					onFocus={ onSetActiveEditable( 'calloutURL' ) }
@@ -137,21 +144,19 @@ export const save = ( props ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-const calloutBlockIcon = (
-	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-		<path style="fill:none;stroke:#00274C;" d="M10.3,3.9L1.8,18c-0.6,1-0.2,2.2,0.7,2.7c0.3,0.2,0.6,0.3,1,0.3h16.9c1.1,0,2-0.9,2-2 c0-0.3-0.1-0.7-0.3-1L13.7,3.9c-0.6-0.9-1.8-1.2-2.7-0.7C10.7,3.4,10.5,3.6,10.3,3.9z"/>
-		<line style="fill:none;stroke:#00274C;stroke-linecap:round;" x1="12" y1="9.4" x2="12" y2="15.4"/>
-		<line style="fill:none;stroke:#666371;" x1="12" y1="17" x2="12" y2="17"/>
-		<line style="fill:none;stroke:#00274C;stroke-linecap:round;" x1="12" y1="17.3" x2="12" y2="17.3"/>
+const textCalloutBlockIcon = (
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666371" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+		<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+		<line fill="#666371" x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12" y2="17"></line>
 	</svg>
 );
 registerBlockType( 'mc-custom-blocks/callout', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'MC Callout' ), // Block title.
-	icon: calloutBlockIcon, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	title: __( 'MC Text Callout' ), // Block title.
+	icon: textCalloutBlockIcon, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'Custom', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'MC Callout' ),
+		__( 'MC Text Callout' ),
 	],
 	attributes: {
 		calloutURL: {
@@ -164,24 +169,21 @@ registerBlockType( 'mc-custom-blocks/callout', {
 			type: 'string',
 			source: 'children',
 			selector: 'a',
-			default: __( 'Please enter Link text' ),
 		},
 		heading: {
 			type: 'array',
 			source: 'children',
 			selector: 'h5',
-			default: __( 'Please enter a Callout Title' ),
 		},
 		des: {
 			type: 'array',
 			source: 'children',
 			selector: 'p',
-			default: __( 'Please enter a Callout Description' ),
 		},
 	},
 
 	// The "edit" property must be a valid function.
-	edit: withState( { editable: 'content', } )( edit ),
+	edit: withState( { editable: 'content' } )( edit ),
 
 	// The "save" property must be specified and must be a valid function.
 	save: save,

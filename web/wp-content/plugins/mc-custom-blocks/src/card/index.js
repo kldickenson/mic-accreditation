@@ -117,6 +117,7 @@ export const edit = ( props ) => {
 			<RichText
 				tagName={ 'h5' }
 				value={ heading }
+				placeholder={ __( 'Add Heading Text' ) }
 				className={ 'card-heading' }
 				onChange={ ( value ) => setAttributes( { heading: value } ) }
 				isSelected={ isSelected && editable === 'heading' }
@@ -125,6 +126,7 @@ export const edit = ( props ) => {
 			<RichText
 				tagName={ 'p' }
 				value={ des }
+				placeholder={ __( 'Add Content Text' ) }
 				className={ 'card-des' }
 				onChange={ ( value ) => setAttributes( { des: value } ) }
 				isSelected={ isSelected && editable === 'des' }
@@ -134,6 +136,7 @@ export const edit = ( props ) => {
 		isSelected && (
 			<form
 				key={ 'form-link' }
+				className={ 'core-blocks-button__inline-link' }
 				onSubmit={ ( event ) => event.preventDefault() }
 				style={ { marginTop: 10 } }
 			>
@@ -145,6 +148,7 @@ export const edit = ( props ) => {
 				/>
 				<IconButton
 					icon={ 'editor-break' }
+					className={ 'components-button components-icon-button' }
 					label={ __( 'Apply' ) }
 					type={ 'submit' }
 				/>
@@ -202,14 +206,15 @@ export const save = ( props ) => {
  */
 const CardIcon = (
 	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="2 2 22 22">
-		<path style="fill:#00274C;" d="M10.7,1.3H3.5c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8V3.1 C12.6,2.1,11.7,1.3,10.7,1.3z M3.5,10.4V3.1h7.3v7.3H3.5z"/>
-		<path style="fill:#00274C;" d="M25.3,1.3H18c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8V3.1 C27.1,2.1,26.3,1.3,25.3,1.3z M18,10.4V3.1h7.3v7.3H18z"/>
-		<path style="fill:#00274C;" d="M10.7,15.8H3.5c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8v-7.3 C12.6,16.6,11.7,15.8,10.7,15.8z M3.5,24.9v-7.3h7.3v7.3H3.5z"/>
-		<path style="fill:#00274C;" d="M25.3,15.8H18c-1,0-1.8,0.8-1.8,1.8v7.3c0,1,0.8,1.8,1.8,1.8h7.3c1,0,1.8-0.8,1.8-1.8v-7.3 C27.1,16.6,26.3,15.8,25.3,15.8z M18,24.9v-7.3h7.3v7.3H18z"/>
+		<path fill="#00274c" d="M14,4H6A2,2,0,0,0,4,6v8a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2V6A2,2,0,0,0,14,4ZM6,14V6h8v8Z"></path>
+		<path fill="#00274c" d="M30,4H22a2,2,0,0,0-2,2v8a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2V6A2,2,0,0,0,30,4ZM22,14V6h8v8Z"></path>
+		<path fill="#00274c" d="M14,20H6a2,2,0,0,0-2,2v8a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2V22A2,2,0,0,0,14,20ZM6,30V22h8v8Z"></path>
+		<path d="M30,20H22a2,2,0,0,0-2,2v8a2,2,0,0,0,2,2h8a2,2,0,0,0,2-2V22A2,2,0,0,0,30,20ZM22,30V22h8v8Z"></path>
 	</svg>
 );
 
-registerBlockType( 'custom-blocks/homepage-card', {
+
+registerBlockType( 'mc-custom-blocks/homepage-card', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'MC Card' ), // Block title.
 	icon: CardIcon, // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
@@ -228,32 +233,23 @@ registerBlockType( 'custom-blocks/homepage-card', {
 			type: 'array',
 			source: 'children',
 			selector: 'h5',
-			default: __( 'Please enter a heading' ),
 		},
 		des: {
 			type: 'array',
 			source: 'children',
 			selector: 'p',
-			default: __( 'Please enter a description' ),
 		},
 		url: {
 			type: 'string',
 			source: 'attribute',
-			selector: '.image-box',
-			attribute: 'data-url',
+			selector: 'img',
+			attribute: 'src',
 		},
-		titleColor: {
-			type: 'string',
-			default: '#ffffff',
-		},
-		id: {
-			type: 'number',
-		},
-		width: {
+		width1: {
 			type: 'number',
 			default: '400',
 		},
-		height: {
+		height2: {
 			type: 'number',
 			default: '400',
 		},

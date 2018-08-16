@@ -12,4 +12,3 @@
 import './accordion/index.js';
 import './callout/index.js';
 import './card/index.js';
-import './download-pdf/index.js';

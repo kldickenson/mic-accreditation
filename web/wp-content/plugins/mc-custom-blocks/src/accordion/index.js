@@ -13,7 +13,7 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 
 const {
 	withState,
-} = wp.components;
+} = wp.compose;
 
 const {
 	RichText,
@@ -47,7 +47,7 @@ export const edit = ( props ) => {
 				tagName={ 'h5' }
 				value={ accordionHeading }
 				placeholder={ __( 'Add Heading Text' ) }
-				className={ 'accredit-callout-heading' }
+				className={ 'accredit-accordion-heading' }
 				onChange={ ( text ) => setAttributes( { accordionHeading: text } ) }
 				isSelected={ isSelected && editable === 'accordionHeading' }
 				onFocus={ onSetActiveEditable( 'accordionHeading' ) }
@@ -105,10 +105,10 @@ export const save = ( props ) => {
  */
 const accordionBlockIcon = (
 	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="2 2 22 22">
-		<path style="fill:#00274C;" d="M1.6,4v16c0,1.1,0.9,2,2,2h22c1.1,0,2-0.9,2-2V4c0-1.1-0.9-2-2-2h-22C2.5,2,1.6,2.9,1.6,4z M25.6,7.8 V20h-22V7.8H25.6z"/>
-		<path style="fill:#00274C;" d="M1.6,26v2c0,1.1,0.9,2,2,2h22c1.1,0,2-0.9,2-2v-2c0-1.1-0.9-2-2-2h-22C2.5,24,1.6,24.9,1.6,26z"/>
-		<path style="fill:none;stroke:#FFCB05;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;" d="M4.1,27h2 M5.1,28v-2"/>
-		<line style="fill:none;stroke:#FFCB05;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;" x1="4.6" y1="5" x2="6.6" y2="5"/>
+		<path fill="none" d="M0,0h24v24H0V0z" />
+		<rect x="3" y="17" width="18" height="2" />
+		<path d="M19,12v1H5v-1H19 M21,10H3v5h18V10L21,10z" />
+		<rect x="3" y="6" width="18" height="2" />
 	</svg>
 );
 registerBlockType( 'mc-custom-blocks/accordion', {
@@ -124,13 +124,11 @@ registerBlockType( 'mc-custom-blocks/accordion', {
 			type: 'array',
 			source: 'children',
 			selector: 'a',
-			default: __( 'Please enter accordion heading' )
 		},
 		accordionContent: {
 			type: 'array',
 			source: 'children',
 			selector: 'div',
-			default: __( 'Please enter accordion content' )
 		},
 	},
 
