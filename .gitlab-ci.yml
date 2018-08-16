@@ -1,9 +1,18 @@
+image: ubuntu:18.04
+
 before_script:
-  - apt-get update -qq && apt-get install -y -qq sshpass
+  - apt-get update -qq
+  - apt-get install -y -qq ssh
+  - apt-get install -y -qq sshpass
+
+stages:
+  - deploy
 
 deploy:
+  stage: deploy
+
   only:
-    - master    
+    - master
+
   script:
-    - export SSHPASS=$USER_PASS
-    - sshpass -e ssh kellerch@sftp.itd.umich.edu 'ls'
+    - sshpass -p $USER_PASS ssh -o StrictHostKeyChecking=no kellerch@sftp.itd.umich.edu "cd ${SITE_PATH}; ./deploy.sh"
