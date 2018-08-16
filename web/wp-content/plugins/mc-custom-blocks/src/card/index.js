@@ -169,14 +169,11 @@ export const save = ( props ) => {
 		<div className={ 'cell' } data-equalizer-watch>
 			<a href={ cardURL }>
 				<div className={ 'card' }>
-					<div className={ 'card-divider row collapse align-middle' }>
-						<div className={ 'column small-4 medium-2 large-2 xlarge-3' }></div>
+					<div className={ 'card-divider' }>
 						{ heading && !! heading.length && (
-							<div className={ 'column shrink' }>
-								<h5>
-									{ heading }
-								</h5>
-							</div>
+							<h5>
+								{ heading }
+							</h5>
 						) }
 					</div>
 					<img src={ url } alt="the thing that was uploaded" />
