@@ -63,17 +63,10 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/5016a31c8c.js', array(), '4.7.0', true );
 		// wp_enqueue_script( 'fontawesome', get_stylesheet_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/js/all.min.js', array(), '5.2.0', true );
 
-
-		// Enqueue Bodymoving from CDN
-		wp_enqueue_script( 'bodymovin', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.js', array(), '4.13.0', true );
-
 		// Add the comment-reply library on pages where it is necessary
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		};
-		if( is_front_page()){
-			wp_enqueue_script( 'home-animations', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'animations.js' ), array(), '1.0.0', true );
-		}
 
 	}
 
