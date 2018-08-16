@@ -181,7 +181,6 @@ const CardIcon = (
 	</svg>
 );
 
-
 registerBlockType( 'mc-custom-blocks/homepage-card', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'MC Card' ), // Block title.

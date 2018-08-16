@@ -24,7 +24,6 @@ const {
 } = wp.blocks;
 
 export const edit = ( props ) => {
-
 	const {
 		isSelected,
 		editable,
@@ -38,11 +37,11 @@ export const edit = ( props ) => {
 	} = props.attributes;
 
 	const onSetActiveEditable = ( newEditable ) => () => {
-		setState( { editable: newEditable } )
+		setState( { editable: newEditable } );
 	};
 
 	return [
-		<div key={ 'editable' } className={ `accredit-accordion` }>
+		<div key={ 'editable' } className={ 'accredit-accordion' }>
 			<RichText
 				tagName={ 'h5' }
 				value={ accordionHeading }
