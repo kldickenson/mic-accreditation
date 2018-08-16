@@ -141,24 +141,23 @@ export const save = ( props ) => {
 	} = props.attributes;
 
 	return (
-				<div className={ 'card' }>
-					<div className={ 'card-divider' }>
-						{ heading && !! heading.length && (
-							<h5>
-								{ heading }
-							</h5>
-						) }
-					</div>
-					<img src={ url } alt="the thing that was uploaded" />
-					{ des && !! des.length && (
-						<div className={ 'card-section' }>
-							<p>
-								{ des }
-							</p>
-						</div>
-					) }
+		<div className={ 'card' }>
+			<div className={ 'card-divider' }>
+				{ heading && !! heading.length && (
+					<h5>
+						{ heading }
+					</h5>
+				) }
+			</div>
+			<img src={ url } alt="the thing that was uploaded" />
+			{ des && !! des.length && (
+				<div className={ 'card-section' }>
+					<p>
+						{ des }
+					</p>
 				</div>
-	
+			) }
+		</div>
 	);
 };
 /**
