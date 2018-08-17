@@ -61,7 +61,7 @@
 
 .site-mobile-title {
   max-width: 80%;
-  image-orientation:  {
+  img  {
    width: 100%;
   }
 }
@@ -72,6 +72,11 @@
   .menu .is-active > a {
     background-color: rgba($white, .15);
     color: $michigan-maize;
+  }
+  .submenu-toggle {
+    border-radius: 0;
+    background: transparent;
+
   }
 }
 
