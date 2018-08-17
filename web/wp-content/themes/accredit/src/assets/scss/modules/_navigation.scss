@@ -69,6 +69,13 @@
 .mobile-menu,
 .mobile-off-canvas-menu {
 
+  .menu a {
+    width: calc(200px - 40px);
+    a {
+      width: calc(200px - 40px - 16px);
+    }
+  }
+
   .menu .is-active > a {
     background-color: rgba($white, .15);
     color: $michigan-maize;
