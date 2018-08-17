@@ -264,13 +264,6 @@ function gutenberg_register_scripts_and_styles() {
 		'before'
 	);
 	wp_register_script(
-		'wp-utils',
-		gutenberg_url( 'build/utils/index.js' ),
-		array( 'lodash', 'wp-api-fetch', 'wp-data', 'wp-deprecated', 'wp-i18n', 'wp-editor' ),
-		filemtime( gutenberg_dir_path() . 'build/utils/index.js' ),
-		true
-	);
-	wp_register_script(
 		'wp-shortcode',
 		gutenberg_url( 'build/shortcode/index.js' ),
 		array(),
@@ -284,8 +277,6 @@ function gutenberg_register_scripts_and_styles() {
 		filemtime( gutenberg_dir_path() . 'build/redux-routine/index.js' ),
 		true
 	);
-	wp_add_inline_script( 'wp-utils', 'var originalUtils = window.wp && window.wp.utils ? window.wp.utils : {};', 'before' );
-	wp_add_inline_script( 'wp-utils', 'for ( var key in originalUtils ) wp.utils[ key ] = originalUtils[ key ];' );
 	wp_register_script(
 		'wp-date',
 		gutenberg_url( 'build/date/index.js' ),
@@ -385,16 +376,19 @@ function gutenberg_register_scripts_and_styles() {
 		true
 	);
 	wp_register_script(
-		'wp-core-blocks',
-		gutenberg_url( 'build/core-blocks/index.js' ),
+		'wp-block-library',
+		gutenberg_url( 'build/block-library/index.js' ),
 		array(
 			'editor',
 			'lodash',
+			'moment',
 			'wp-api-fetch',
+			'wp-autop',
 			'wp-blob',
 			'wp-blocks',
 			'wp-components',
 			'wp-compose',
+			'wp-data',
 			'wp-core-data',
 			'wp-editor',
 			'wp-element',
@@ -403,6 +397,17 @@ function gutenberg_register_scripts_and_styles() {
 			'wp-keycodes',
 			'wp-url',
 			'wp-viewport',
+		),
+		filemtime( gutenberg_dir_path() . 'build/block-library/index.js' ),
+		true
+	);
+	// Remove it with 3.8.0 release.
+	wp_register_script(
+		'wp-core-blocks',
+		gutenberg_url( 'build/core-blocks/index.js' ),
+		array(
+			'wp-block-library',
+			'wp-deprecated',
 		),
 		filemtime( gutenberg_dir_path() . 'build/core-blocks/index.js' ),
 		true
@@ -475,7 +480,7 @@ function gutenberg_register_scripts_and_styles() {
 		// Decode the options as we used to recommende json_encoding the TinyMCE settings.
 		$tinymce_settings['style_formats'] = json_decode( $tinymce_settings['style_formats'] );
 	}
-	wp_localize_script( 'wp-core-blocks', 'wpEditorL10n', array(
+	wp_localize_script( 'wp-block-library', 'wpEditorL10n', array(
 		'tinymce' => array(
 			'baseURL'  => includes_url( 'js/tinymce' ),
 			'suffix'   => SCRIPT_DEBUG ? '' : '.min',
@@ -531,7 +536,7 @@ function gutenberg_register_scripts_and_styles() {
 			'wp-api-fetch',
 			'wp-components',
 			'wp-compose',
-			'wp-core-blocks',
+			'wp-block-library',
 			'wp-date',
 			'wp-data',
 			'wp-dom-ready',
@@ -572,7 +577,7 @@ function gutenberg_register_scripts_and_styles() {
 	wp_register_style(
 		'wp-edit-post',
 		gutenberg_url( 'build/edit-post/style.css' ),
-		array( 'wp-components', 'wp-editor', 'wp-edit-blocks', 'wp-core-blocks', 'wp-nux' ),
+		array( 'wp-components', 'wp-editor', 'wp-edit-blocks', 'wp-block-library', 'wp-nux' ),
 		filemtime( gutenberg_dir_path() . 'build/edit-post/style.css' )
 	);
 	wp_style_add_data( 'wp-edit-post', 'rtl', 'replace' );
@@ -586,23 +591,23 @@ function gutenberg_register_scripts_and_styles() {
 	wp_style_add_data( 'wp-components', 'rtl', 'replace' );
 
 	wp_register_style(
-		'wp-core-blocks',
-		gutenberg_url( 'build/core-blocks/style.css' ),
-		current_theme_supports( 'wp-block-styles' ) ? array( 'wp-core-blocks-theme' ) : array(),
-		filemtime( gutenberg_dir_path() . 'build/core-blocks/style.css' )
+		'wp-block-library',
+		gutenberg_url( 'build/block-library/style.css' ),
+		current_theme_supports( 'wp-block-styles' ) ? array( 'wp-block-library-theme' ) : array(),
+		filemtime( gutenberg_dir_path() . 'build/block-library/style.css' )
 	);
-	wp_style_add_data( 'wp-core-blocks', 'rtl', 'replace' );
+	wp_style_add_data( 'wp-block-library', 'rtl', 'replace' );
 
 	wp_register_style(
 		'wp-edit-blocks',
-		gutenberg_url( 'build/core-blocks/edit-blocks.css' ),
+		gutenberg_url( 'build/block-library/edit-blocks.css' ),
 		array(
 			'wp-components',
 			'wp-editor',
 			// Always include visual styles so the editor never appears broken.
-			'wp-core-blocks-theme',
+			'wp-block-library-theme',
 		),
-		filemtime( gutenberg_dir_path() . 'build/core-blocks/edit-blocks.css' )
+		filemtime( gutenberg_dir_path() . 'build/block-library/edit-blocks.css' )
 	);
 	wp_style_add_data( 'wp-edit-blocks', 'rtl', 'replace' );
 
@@ -615,12 +620,12 @@ function gutenberg_register_scripts_and_styles() {
 	wp_style_add_data( 'wp-nux', 'rtl', 'replace' );
 
 	wp_register_style(
-		'wp-core-blocks-theme',
-		gutenberg_url( 'build/core-blocks/theme.css' ),
+		'wp-block-library-theme',
+		gutenberg_url( 'build/block-library/theme.css' ),
 		array(),
-		filemtime( gutenberg_dir_path() . 'build/core-blocks/theme.css' )
+		filemtime( gutenberg_dir_path() . 'build/block-library/theme.css' )
 	);
-	wp_style_add_data( 'wp-core-blocks-theme', 'rtl', 'replace' );
+	wp_style_add_data( 'wp-block-library-theme', 'rtl', 'replace' );
 
 	wp_register_script(
 		'wp-plugins',
@@ -956,7 +961,7 @@ function gutenberg_common_scripts_and_styles() {
 	}
 
 	// Enqueue basic styles built out of Gutenberg through `npm build`.
-	wp_enqueue_style( 'wp-core-blocks' );
+	wp_enqueue_style( 'wp-block-library' );
 
 	/*
 	 * Enqueue block styles built through plugins.  This lives in a separate
@@ -1152,7 +1157,6 @@ function gutenberg_editor_scripts_and_styles( $hook ) {
 	// https://github.com/WordPress/gutenberg/issues/5667.
 	add_filter( 'user_can_richedit', '__return_true' );
 
-	wp_enqueue_script( 'wp-utils' );
 	wp_enqueue_script( 'wp-edit-post' );
 
 	global $post;
