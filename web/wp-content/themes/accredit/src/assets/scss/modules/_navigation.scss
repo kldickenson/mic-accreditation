@@ -19,8 +19,20 @@
 // hamburger
 .site-title-bar .menu-icon {
   width: 2rem;
-  height: 2rem;
-  background: url(../images/menu.svg) left center no-repeat;
+  height: 2.5rem;
+  background: url(../images/menu.svg) left bottom no-repeat;
+  background-size: contain;
+  position: relative;
+  margin-right: 1rem;
+  border-radius: 0;
+  &:before {
+    color:$white;
+    font-size: .75rem;
+    content: "Menu";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .mobile-menu {
