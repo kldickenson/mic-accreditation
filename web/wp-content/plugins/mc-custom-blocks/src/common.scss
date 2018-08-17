@@ -1,0 +1,65 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+// U-M Brand Colors
+$michigan-blue: #00274c;
+$michigan-maize: #ffcb05;
+$tappan-red: #9a3324;
+$arboretum-blue: #407ec9;
+$ross-orange: #d86018;
+$taubman-teal: #00b2a9;
+$wave-field-green: #ada400;
+$a2-amethyst: #702082;
+// Accreditation colors
+$link-hover: rgba($michigan-maize, .85);
+$light-blue: #d5e1f1;
+// Social
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$snapchat: #FFFC00;
+$envelope: $ross-orange;
+$plus: $tappan-red;
+$rss: #FF6600;
+// Black - Grayscale - White
+$faintest-gray: #fafafa;
+$faint-gray: #f9f9f9;
+$lightest-gray: #efefef;
+$lighter-gray: #e5e5e5;
+$light-gray: #e8e7e1;
+$medium-gray: #6c6c6c;
+$dark-gray: #4A4A4A;
+$darker-gray: #3d3d3d;
+$black: #171717;
+$white: #fefefe;
+// Full Black & black default transparent values
+$black-100: rgba(0, 0, 0, 1);
+$black-87: rgba(0, 0, 0, 0.87);
+$black-54: rgba(0, 0, 0, 0.54);
+$black-26: rgba(0, 0, 0, 0.26);
+$black-12: rgba(0, 0, 0, 0.12);
+$black-06: rgba(0, 0, 0, 0.06);
+// Full White & black default transparent values
+$white-100: rgba(255, 255, 255, 1);
+$white-87: rgba(255, 255, 255, 0.87);
+$white-54: rgba(255, 255, 255, 0.54);
+$white-24: rgba(255, 255, 255, 0.24);
+
+html {
+  background-image: linear-gradient(-192deg, $michigan-blue 0%, #1A4166 100%);
+}
+
+$light-border-color: rgba(239, 240, 244, 0.50);
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');

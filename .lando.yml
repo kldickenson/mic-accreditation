@@ -2,3 +2,23 @@ name: accreditation
 recipe: wordpress
 config:
   webroot: web
+services:
+  node:
+    type: node:8.11.1
+    build:
+      - "cd $LANDO_MOUNT/wp-content/themes/accredit && npm install"
+    overrides:
+      services:
+        ports:
+          - 3000:3000
+          - 3001:3001
+    globals:
+      gulp-cli: "latest"
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+    

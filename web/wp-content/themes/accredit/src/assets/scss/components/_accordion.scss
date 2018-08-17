@@ -18,18 +18,21 @@
   .accordion-title {
     /* to add Font Awesome to the accordion */
     @include fa-icon;
-    @extent .fas;
+    // @extent .fas;
     display: block;
     padding-left: 1rem;
-    background-color: $light-blue;
+    background-color: $light-blue !important;
     border-radius: 0;
-    border-bottom: 0;
+    border-bottom: 0 !important;
     font-family: $accredit-accordion-title-font;
     font-weight: 700;
     color: $black;
     text-decoration: none;
     text-transform: uppercase;
     transition: all .2s ease-in-out;
+    &:hover {
+      border: 0 !important;
+    }
 
 
     &::before {

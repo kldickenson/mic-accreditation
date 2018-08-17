@@ -1,13 +1,13 @@
-# _my_ MS Toolkit
+# U-M Accreditation
 
-my_ MS Toolkit is a theme for WordPress based on Zurb's [Foundation for Sites 6](https://foundation.zurb.com/sites.html).
+U-M Accreditation is a theme for WordPress based on Zurb's [Foundation for Sites 6](https://foundation.zurb.com/sites.html).
 
 
 ## Requirements
 
 **This project requires [Node.js](http://nodejs.org) v4.x.x to v6.11.x to be installed on your machine.** Please be aware that you might encounter problems with the installation if you are using the most current Node version (bleeding edge) with all the latest features.
 
-my_ MS Toolkit uses [Sass](http://Sass-lang.com/) (CSS with superpowers). In short, Sass is a CSS pre-processor that allows you to write styles more effectively and tidy.
+U-M Accreditation uses [Sass](http://Sass-lang.com/) (CSS with superpowers). In short, Sass is a CSS pre-processor that allows you to write styles more effectively and tidy.
 
 The Sass is compiled using libsass, which requires the GCC to be installed on your machine. Windows users can install it through [MinGW](http://www.mingw.org/), and Mac users can install it through the [Xcode Command-line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
 
@@ -17,7 +17,7 @@ The Sass is compiled using libsass, which requires the GCC to be installed on yo
 ### 1. Clone the repository and install with npm
 ```bash
 $ cd my-wordpress-folder
-$ git clone git@gitlab.com:amyx/my-mstoolkit.git
+$ git clone git@gitlab.com:umichcreative/accreditation.git
 $ cd my-wordpress-folder/wp-content/themes/
 $ npm install
 ```
@@ -25,7 +25,7 @@ $ npm install
 ### 2. Configuration
 
 #### YAML config file
-my_ MS Toolkit includes a `config-default.yml` file. To make changes to the configuration, make a copy of `config-default.yml` and name it `config.yml` and make changes to that file. The `config.yml` file is ignored by git so that each environment can use a different configuration with the same git repo.
+U-M Accreditation includes a `config-default.yml` file. To make changes to the configuration, make a copy of `config-default.yml` and name it `config.yml` and make changes to that file. The `config.yml` file is ignored by git so that each environment can use a different configuration with the same git repo.
 
 At the start of the build process a check is done to see if a `config.yml` file exists. If `config.yml` exists, the configuration will be loaded from `config.yml`. If `config.yml` does not exist, `config-default.yml` will be used as a fallback.
 
@@ -95,11 +95,4 @@ If you need to output additional JavaScript files separate from `app.js`, do the
 
 
 ## Local Development
-We recommend using one of the following setups for local WordPress development:
-
-* [MAMP](https://www.mamp.info/en/) (macOS)
-* [WAMP](http://www.wampserver.com/en/download-wampserver-64bits/) (Windows)
-* [LAMP](https://www.linux.com/learn/easy-lamp-server-installation) (Linux)
-* [Local](https://local.getflywheel.com/) (macOS/Windows)
-* [VVV (Varying Vagrant Vagrants)](https://github.com/Varying-Vagrant-Vagrants/VVV) (Vagrant Box)
-* [Trellis](https://roots.io/trellis/)
+Lando.yaml for local Lando yams.

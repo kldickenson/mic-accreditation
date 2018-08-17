@@ -51,10 +51,18 @@
     }
 
     a {
+      background-color: transparent;
       border-bottom: 1px solid $anchor-color;
+      // this is an attempt to come up with a different treatment on hover
+      // rather than having it bold on which moves content I'm
+      // doing stuff with background images
+      transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
       &:hover, &:focus  {
-        font-weight: $anchor-font-weight-hover;
-        border-bottom: none;
+        // font-weight: $anchor-font-weight-hover;
+        // border-bottom: none;
+        background-color: $light-blue;
+        border-bottom-color: $light-blue;
+        color: $black;
       }
     }
     h2 {

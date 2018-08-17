@@ -1,0 +1,41 @@
+/**
+ * #.# Editor Styles for Card Block
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ .edit-post-visual-editor {
+	.card {
+        background: #FAF7F8;
+		border: 1px solid #BBC9C8;
+		box-shadow: none;
+        color: #161412;
+        display: flex;
+        font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+		flex-direction: column;
+		flex-grow: 1;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        min-width: auto;
+        overflow: hidden;
+        padding: 0;
+		.card-heading {
+            background-color: #E8E8D9;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+			padding: 1rem;
+			width: 100%;
+		}
+		.card-des {
+            font-size: 1rem;
+			padding: 1rem;
+		}
+	}
+	.image-box.has-image {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 300px;
+		width: 100%;
+	}
+}
