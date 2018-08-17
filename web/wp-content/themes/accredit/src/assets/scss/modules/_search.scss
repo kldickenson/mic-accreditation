@@ -5,7 +5,7 @@
   }
   .input-group {
     margin-bottom: 0;
-    @include breakpoint(snall only) {
+    @include breakpoint(small only) {
       padding-left: 1rem;
     }
 
