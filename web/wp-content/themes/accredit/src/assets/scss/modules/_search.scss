@@ -5,7 +5,9 @@
   }
   .input-group {
     margin-bottom: 0;
-    // min-width: 14.5rem;
+    @include breakpoint(snall only) {
+      padding-left: 1rem;
+    }
 
     >:first-child {
       border-radius: 0;
@@ -28,9 +30,6 @@
   input {
     border: 0;
     font-size: .75rem;
-    &:focus {
-      // border: 0;
-    }
     @include breakpoint(small only) {
       min-width: 80%;
       height: 2.5rem;

@@ -17,10 +17,15 @@
 // Mobile menu
 
 // hamburger
-.site-title-bar .menu-icon {
-  width: 2rem;
-  height: 2rem;
-  background: url(../images/menu.svg) left center no-repeat;
+.site-title-bar {
+  .menu-icon {
+    width: 2rem;
+    height: 2rem;
+    background: url(../images/menu.svg) left center no-repeat;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .mobile-menu {

@@ -68,7 +68,7 @@
 			<div class="title-bar-left">
 				<button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
 				<span class="site-mobile-title title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/logos/acc-signature-stationery-white.png" alt="Accreditation, University of Michigan"></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/acc-signature-stationery-white.svg" alt="Accreditation, University of Michigan"></a>
 				</span>
 			</div>
 		</div>
@@ -79,7 +79,7 @@
 			<div class="grid-container">
 				<div class="logo-search grid-x grid-margin-x medium-margin-collapse align-justify">
 					<div class="logo cell small-12 medium-4 hide-for-small-only">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/logos/acc-signature-stationery-white.png" alt="Accreditation, University of Michigan"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/acc-signature-stationery-white.svg" alt="Accreditation, University of Michigan"></a>
 					</div>
 					<div class="search cell small-12 medium-4 align-self-bottom">
 						<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
