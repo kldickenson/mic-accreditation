@@ -75,8 +75,9 @@
   }
   .submenu-toggle {
     border-radius: 0;
-    background: transparent;
-
+    background-color: rgba($white, .15);
+    border-bottom: 1px solid $michigan-blue;
+    border-top: 1px solid $michigan-blue;
   }
 }
 
