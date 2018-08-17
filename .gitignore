@@ -23,3 +23,4 @@ node_modules
 web/wp-config.php
 web/wp-content/uploads
 web/wp-content/upgrade
+web/wp-content/plugins/wordpress-importer/
