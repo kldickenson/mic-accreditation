@@ -40,7 +40,7 @@ export const edit = ( props ) => {
 	} = props;
 
 	const {
-		url,
+		imgURL,
 		heading,
 		id,
 		des,
@@ -51,7 +51,7 @@ export const edit = ( props ) => {
 		full,
 	} = props.attributes;
 
-	const imageClass = url ? 'has-image' : '';
+	const imageClass = imgURL ? 'has-image' : '';
 
 	const fullWidth = full ? 'full-width' : '';
 
@@ -62,10 +62,10 @@ export const edit = ( props ) => {
 	return [
 		isSelected && (
 			<BlockControls key={ 'controls' }>
-				{ url && (
+				{ imgURL && (
 					<Toolbar>
 						<MediaUpload
-							onSelect={ ( media ) => setAttributes( { url: media.url, id: media.id } ) }
+							onSelect={ ( media ) => setAttributes( { imgURL: media.url, id: media.id } ) }
 							type="image"
 							value={ id }
 							render={ ( { open } ) => (
@@ -84,23 +84,23 @@ export const edit = ( props ) => {
 		<div key={ 'editable' } className={ 'card' }>
 			<div key={ 'editable' }
 				className={ `image-box ${ imageClass } ${ fullWidth }` }
-				data-url={ url }
+				data-url={ imgURL }
 				style={ {
 					width: width2 + 'px',
 					height: height1 + 'px',
-					backgroundImage: `url(${ url })`,
+					backgroundImage: `url(${ imgURL })`,
 					alignItems: horizontalAlign,
 					justifyContent: verticalAlign,
 				} }
 			>
 			</div>
 			<MediaUpload
-				onSelect={ ( media ) => setAttributes( { url: media.url, id: media.id } ) }
+				onSelect={ ( media ) => setAttributes( { imgURL: media.url, id: media.id } ) }
 				type={ 'image' }
 				value={ id }
 				render={ function( obj ) {
 					return [
-						! url && (
+						! imgURL && (
 							<Button
 								className={ id ? '' : 'button button-large' }
 								onClick={ obj.open }
@@ -137,7 +137,7 @@ export const save = ( props ) => {
 	const {
 		heading,
 		des,
-		url,
+		imgURL,
 	} = props.attributes;
 
 	return (
@@ -149,7 +149,7 @@ export const save = ( props ) => {
 					</h5>
 				) }
 			</div>
-			<img src={ url } alt="the thing that was uploaded" />
+			<img src={ imgURL } alt="the thing that was uploaded" />
 			{ des && !! des.length && (
 				<div className={ 'card-section' }>
 					<p>
@@ -190,11 +190,11 @@ registerBlockType( 'mc-custom-blocks/homepage-card', {
 		__( 'MC Card' ),
 	],
 	attributes: {
-		cardURL: {
+		imgURL: {
 			type: 'string',
 			source: 'attribute',
-			selector: 'a',
-			attribute: 'href',
+			attribute: 'src',
+			selector: 'img',
 		},
 		heading: {
 			type: 'array',
