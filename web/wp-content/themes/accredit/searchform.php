@@ -8,12 +8,11 @@
 
 ?>
 
-<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-	<div class="input-group">
-		<input type="text" class="input-group-field" value="" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'foundationpress' ); ?>">
-		<div class="input-group-button">
-			<label for="searchsubmit"></label>
-			<input type="submit" title="search" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'foundationpress' ); ?>" class="button">
+	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+		<div class="input-group">
+		<label for="s" class="visuallyhidden">Enter search terms</label>
+			<input type="text" class="input-group-field" aria-label="Search" value="" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'foundationpress' ); ?>">
+			<label for="searchsubmit" class="visuallyhidden">Submit</label>
+			<input type="submit" id="searchsubmit" value="&#xf002;" class="input-group-button fa button">
 		</div>
-	</div>
-</form>
+	</form>

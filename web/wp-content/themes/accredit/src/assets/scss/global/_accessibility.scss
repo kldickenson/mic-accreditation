@@ -48,3 +48,14 @@
     box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
   }
 }
+// Used for hidding form input labels
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

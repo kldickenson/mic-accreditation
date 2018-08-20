@@ -23,9 +23,9 @@
     padding: .35rem .75rem;
   }
 
-  .input-group-button {
-    background: $white;
-  }
+  // .input-group-button {
+  //   background: $white;
+  // }
 
   input {
     border: 0;
@@ -36,10 +36,12 @@
       font-size: 1rem;
     }
 
+
     &.button {
       background-color: $white;
       border: none;
       color: $black;
+      border-radius: 0 !important;
     }
   }
 }
