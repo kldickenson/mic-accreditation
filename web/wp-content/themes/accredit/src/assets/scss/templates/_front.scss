@@ -148,6 +148,7 @@
       }
     }
     .more-link {
+      content: " ";
       &:after {
         font-size: 1.1rem;
         font-family: $font-awesome;
