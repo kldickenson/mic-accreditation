@@ -16,12 +16,18 @@ const {
 } = wp.compose;
 
 const {
+	registerBlockType, // Import registerBlockType() from wp.blocks
+} = wp.blocks;
+
+const {
 	RichText,
+	InspectorControls,
 } = wp.editor;
 
 const {
-	registerBlockType, // Import registerBlockType() from wp.blocks
-} = wp.blocks;
+	TextControl,
+	PanelBody,
+} = wp.components;
 
 export const edit = ( props ) => {
 	const {
@@ -32,6 +38,7 @@ export const edit = ( props ) => {
 	} = props;
 
 	const {
+		anchor,
 		accordionHeading,
 		accordionContent,
 	} = props.attributes;
@@ -41,6 +48,18 @@ export const edit = ( props ) => {
 	};
 
 	return [
+		<InspectorControls key={ 'inspector' }>
+			<PanelBody title={ __( 'Settings' ) }>
+				<TextControl
+					label={ __( 'Anchor Attribute' ) }
+					help={ __( 'An anchor is a unique text label you can use to link directly to this section inline.' ) }
+					value={ anchor }
+					onChange={ ( anchor ) => {
+						setAttributes( { anchor } );
+					} }
+				/>
+			</PanelBody>
+		</InspectorControls>,
 		<div key={ 'editable' } className={ 'accredit-accordion' }>
 			<RichText
 				tagName={ 'h5' }
@@ -68,20 +87,21 @@ export const edit = ( props ) => {
 
 export const save = ( props ) => {
 	const {
+		anchor,
 		accordionHeading,
 		accordionContent,
 	} = props.attributes;
 
 	return (
-		<ul className={ 'accordion' } data-accordion data-allow-all-closed="true">
+		<ul className={ 'accordion' } data-accordion data-Options={ 'allowAllClosed:true; deepLink:true; updateHistory:true;' }>
 			<li className={ 'accordion-item' } data-accordion-item>
 				{ accordionHeading && !! accordionHeading.length && (
-					<a className={ 'accordion-title' } href="#">
+					<a className={ 'accordion-title' } href={ '#' + anchor }>
 						{ accordionHeading }
 					</a>
 				) }
 				{ accordionContent && !! accordionContent.length && (
-					<div className={ 'accordion-content' } data-tab-content>
+					<div className={ 'accordion-content' } id={ anchor } data-tab-content>
 						{ accordionContent }
 					</div>
 				) }
@@ -128,6 +148,12 @@ registerBlockType( 'mc-custom-blocks/accordion', {
 			type: 'array',
 			source: 'children',
 			selector: 'div',
+		},
+		anchor: {
+			type: 'string',
+			source: 'attribute',
+			selector: '.accordion-content',
+			attribute: 'id',
 		},
 	},
 
