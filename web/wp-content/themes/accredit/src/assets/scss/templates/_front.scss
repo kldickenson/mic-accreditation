@@ -7,14 +7,14 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    min-height: 120px;
+    min-height: 100px;
   }
 
   @include breakpoint(medium) {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: rem-calc(450);
+    height: rem-calc(400);
     // margin: 0 0 rem-calc(48);
   }
   @include breakpoint(large) {
@@ -196,7 +196,6 @@
         width: auto;
         float: right;
       }
-
     }
   }
 }
