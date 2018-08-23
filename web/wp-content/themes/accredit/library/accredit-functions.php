@@ -67,19 +67,6 @@ function accredit_remove_dashboard_widgets() {
 }
 add_action('wp_dashboard_setup', 'accredit_remove_dashboard_widgets' );
 
-// remove posts from admin menu
-function accredit_remove_posts() {
-    remove_menu_page( 'edit.php' );
-}
-add_action( 'admin_menu', 'accredit_remove_posts' );
-
-// remove posts from admin bar
-add_action( 'admin_bar_menu', 'remove_default_post_type_menu_bar', 999 );
-
-function remove_default_post_type_menu_bar( $wp_admin_bar ) {
-    $wp_admin_bar->remove_node( 'new-post' );
-}
-
 // get current URL for insertion to the meta tags
 function the_current_url() {
 	echo home_url(add_query_arg(array()));

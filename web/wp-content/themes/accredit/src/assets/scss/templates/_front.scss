@@ -193,7 +193,7 @@
         margin-top: $global-margin;
       }
       @include breakpoint(medium) {
-        width: 200px;
+        width: auto;
         float: right;
       }
 
@@ -223,12 +223,12 @@
       margin-bottom: $global-margin;
       text-align: center;
     }
-    @include breakpoint(medium) {
-      @include xy-cell(3);
-      text-align: left;
-    }
+    // @include breakpoint(medium) {
+    //   @include xy-cell(4);
+    //   text-align: left;
+    // }
     img {
-      @include breakpoint(small) {
+      @include breakpoint(small only) {
         width: 50%;
       }
       @include breakpoint(medium) {
