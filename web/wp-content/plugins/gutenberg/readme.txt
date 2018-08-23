@@ -2,7 +2,7 @@
 Contributors: matveb, joen, karmatosed
 Requires at least: 4.9.8
 Tested up to: 4.9
-Stable tag: 3.6.0
+Stable tag: 3.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,13 @@ See also <a href="https://github.com/WordPress/gutenberg/blob/master/CONTRIBUTIN
 == Changelog ==
 
 = Latest =
+
+* Restore min-width to popover.
+* Fix wide toolbar regression
+* Add e2e test for publishing a page
+* Fix typo for removing excerpt block stripping
+
+= 3.6.1 =
 
 * Fixed an issue that caused page publishing to fail.
 * Fixed an issue with the block options menu appearing too narrow.
