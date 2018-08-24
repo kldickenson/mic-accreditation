@@ -78,7 +78,7 @@
 			<a class="skip-link" href="#mainContent">Skip to Content</a>
 			<div class="grid-container">
 				<div class="logo-search grid-x grid-margin-x medium-margin-collapse align-justify">
-					<div class="logo cell small-12 medium-4 hide-for-small-only">
+					<div class="logo cell small-12 medium-4 hide-for-small-only align-self-bottom">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/assets/images/acc-signature-stationery-white.svg" alt="Accreditation, University of Michigan"></a>
 					</div>
 					<div class="search cell small-12 medium-4 align-self-bottom">
