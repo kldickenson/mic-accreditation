@@ -1,29 +1,32 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "1ed57f7ea0ec83a7af33211c4ed92344",
     "content-hash": "b63765525e5fabcf664728d548ecf8a2",
     "packages": [
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.8.2",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe"
+                "reference": "51ca4b713f3706d6b27769c6296bbc0c28a5bbd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
-                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/51ca4b713f3706d6b27769c6296bbc0c28a5bbd0",
+                "reference": "51ca4b713f3706d6b27769c6296bbc0c28a5bbd0",
                 "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "^0.1.2",
-                "phpunit/phpunit": "^4.7"
+                "phpunit/phpunit": "^6"
             },
             "type": "library",
             "autoload": {
@@ -33,7 +36,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -42,7 +45,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2017-12-06 15:31:26"
+            "time": "2019-10-21T22:39:08+00:00"
         }
     ],
     "packages-dev": [],
